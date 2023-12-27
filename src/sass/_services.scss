@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+.container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.para {
+  text-align: justify;
+}
+.services {
+
+  .serviceCard {
+
+
+
+    .card {
+      max-width: 550px;
+      border: 0;
+      width: 100%;
+      border-radius: 45px;
+    }
+
+    .container-card {
+      position: relative;
+      border: 2px solid transparent;
+      background: linear-gradient(71deg, #080509, #1a171c, #080509);
+      border-radius: 45px;
+      padding: 30px;
+
+      .imgDiv1 {
+        border: 2px solid #b0afb0;
+      }
+
+      .imgDiv2 {
+        border: 2px solid #afa220;
+      }
+
+      .imgDiv3 {
+        border: 2px solid #e2afff;
+      }
+
+      .imgDiv4 {
+        border: 2px solid #5f6fad;
+      }
+
+      .imgDiv5 {
+        border: 2px solid #3da077;
+      }
+
+      .imgDiv6 {
+        border: 2px solid #e7bc91;
+      }
+
+      .imgDiv {
+        max-width: 70px;
+
+        background: linear-gradient(71deg, #080509, #1a171c, #080509);
+        border-radius: 20px;
+        padding: 10px;
+
+        .servceImg {
+          width: 50px;
+          height: 50px;
+        }
+
+      }
+    }
+
+    .bg-green-box {
+      border: 1px solid #3da077;
+      transition: 0.6s;
+    }
+
+    .bg-green-box:hover {
+      border: 1px solid #3da077;
+      // box-shadow: #3da077 0px 2px 8px 0px;
+      box-shadow: #3da077 0px 14px 28px, #3da077 0px 10px 10px;
+    }
+
+    .bg-white-box {
+      border: 1px solid #b0afb0;
+      transition: 0.6s;
+    }
+
+    .bg-white-box:hover {
+      border: 1px solid #b0afb0;
+
+      box-shadow: #b0afb0 0px 14px 28px, #b0afb0 0px 10px 10px;
+
+    }
+
+    .bg-yellow-box {
+      border: 1px solid #afa220;
+      transition: 0.6s;
+    }
+
+    .bg-yellow-box:hover {
+      border: 1px solid #afa220;
+
+      box-shadow: #afa220 0px 14px 28px, #afa220 0px 10px 10px;
+
+    }
+
+    .bg-blue-box {
+      border: 1px solid #5f6fad;
+      transition: 0.6s;
+    }
+
+    .bg-blue-box:hover {
+      border: 1px solid #5f6fad;
+
+      box-shadow: #5f6fad 0px 14px 28px, #5f6fad 0px 10px 10px;
+
+    }
+
+    .bg-cream-box {
+      border: 1px solid #e7bc91;
+      transition: 0.6s;
+    }
+
+    .bg-cream-box:hover {
+      border: 1px solid #e7bc91;
+
+      box-shadow: #e7bc91 0px 14px 28px, #e7bc91 0px 10px 10px;
+
+    }
+
+    .bg-parpal-box {
+      border: 1px solid #e2afff;
+      transition: 0.6s;
+    }
+
+    .bg-parpal-box:hover {
+      border: 1px solid #e2afff;
+
+      box-shadow: #e2afff 0px 14px 28px, #e2afff 0px 10px 10px;
+
+    }
+
+
+    .card-title {
+      font-weight: 600;
+      color: white;
+      letter-spacing: -0.02em;
+      line-height: 40px;
+      font-style: normal;
+      font-size: 28px;
+      padding-bottom: 8px;
+
+    }
+
+    .card-description {
+      font-weight: 600;
+      line-height: 32px;
+      color: hsla(0, 0%, 100%, 0.5);
+      font-size: 16px;
+
+
+    }
+
+  }
+}

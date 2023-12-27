@@ -1,0 +1,29 @@
+@import './sass/bootstrap';
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex:1 0 auto;
+    background-color: $dark;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 13px;
+    background-color: $warning;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out; /* Optional transition for smoother appearance */
+    opacity: 1; /* Initially hidden */
+    box-shadow: $warning 0px 10px 20px -12px;
+    z-index: 111;
+  }
+  

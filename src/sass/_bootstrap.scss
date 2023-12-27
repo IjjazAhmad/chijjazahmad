@@ -1,0 +1,74 @@
+@import './color';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import './header';
+@import './loader';
+@import './home';
+@import './footer';
+@import './form';
+@import './project';
+@import './services';
+
+.bgDark {
+  background-color: $dark ;
+}
+
+
+
+.hirebtn {
+  z-index: 111;
+  position: fixed;
+    bottom: 80px;
+    right: 25px;
+  .btn-hire  {
+    border-radius: 20px;
+    background-color: $warning;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out; /* Optional transition for smoother appearance */
+    opacity: 1; /* Initially hidden */
+    box-shadow: $warning 0px 10px 20px -12px;
+    
+    padding: 10px 2px !important;
+    .vertical-text {
+      writing-mode: vertical-rl;
+      /* Vertical text from right to left */
+      text-orientation: mixed;
+      /* Optional: Ensures proper orientation of characters */
+      white-space: nowrap;
+      /* Optional: Prevents text from wrapping */
+    }
+
+  }
+
+  .btn-warning:hover {
+    background-color: $warninghover;
+    box-shadow: $warninghover 0px 10px 30px -10px, $warninghover 0px 5px 10px -10px !important;
+  }
+}
+
+
+// ------------------ scrolebar styling
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $warninghover;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $namecolor;
+}
