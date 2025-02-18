@@ -1,37 +1,64 @@
-import React from 'react'
-import Contactform from '../../../components/Form/ContactForm';
-export default function Contact() {
-  return (
-    <>
-      <div className="form">
-        <div className="container ">
+import ContactForm from "../../../components/Form/ContactForm";
 
-          <div className="row justify-content-center mt-5">
-            <div className="col-12 col-md-3 col-lg-2 my-2">
-              <a href="https://wa.me/923267876344" target='blank' className="card text-center p-3 bg-dark-emphasis">
-                <i className="fa-brands fa-square-whatsapp mb-1"></i>
-                <p className='mb-1'>WhatsApp</p>
-              </a>
+const Contact = () => {
+  return (
+    <div>
+      <div className='bg'>
+        <div className="container">
+          <div className="row">
+            <div className="col py-5 text-white  text-center">
+              <h1>Contact Us</h1>
+              <p className='gap-3 align-items-center justify-content-center d-flex'>Home <i class="fa-solid fa-arrow-right-long"></i> Contact</p>
             </div>
-            <div className="col-12 col-md-3 col-lg-2 my-2">
-              <a href="mailto:ijjazahmad705@gmail.com" className="card text-center p-3">
-                <i className="fa-solid fa-envelope mb-1"></i>
-                <p className='mb-1'>Send Email</p>
-              </a>
+          </div>
+        </div>
+      </div>
+      <section className="contact-widget py-5 spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="contact__widget__item text-white-50">
+                <div className="contact__widget__item__icon">
+                  <i className="fa fa-map-marker"></i>
+                </div>
+                <div className="contact__widget__item__text">
+                  <h4>Address</h4>
+                  <p>Faisalabad, Punjab Pakistan</p>
+                </div>
+              </div>
             </div>
-            <div className="col-12 col-md-3 col-lg-2 my-2">
-              <div className="card text-center p-3">
-                <i className="fa-solid fa-location-dot"></i>
-                <p className='mb-1'>Faisalabad, Punjab Pakistan</p>
+            <div className="col-lg-4 col-md-6">
+              <div className="contact__widget__item">
+                <a href="https://wa.me/923267876344" target='_blank' className="text-white-50">
+                  <div className="contact__widget__item__icon">
+                    <i className="fa fa-phone"></i>
+                  </div>
+                  <div className="contact__widget__item__text">
+                    <h4>Phone</h4>
+                    <p>+923267876344</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="contact__widget__item">
+                <a target='_blank' href="mailto:ijjazahmad705@gmail.com" className="text-white-50">
+                  <div className="contact__widget__item__icon">
+                    <i className="fa fa-envelope"></i>
+                  </div>
+                  <div className="contact__widget__item__text">
+                    <h4>Email</h4>
+                    <p>ijjazahmad705@gmail.com</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-
-          {/* ---------- form -------- */}
-          <Contactform />
-
         </div>
-      </div>
-    </>
-  )
-}
+      </section>
+      <ContactForm />
+    </div>
+  );
+};
+
+export default Contact;

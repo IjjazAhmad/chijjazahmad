@@ -52,19 +52,19 @@
         color: $warning !important;
       }
 
-      .btn-warning {
-        border-radius: 20px;
-        box-shadow: $warning 0px 10px 20px -12px !important;
-      }
-
-      .btn-warning:hover {
-        background-color: $warninghover;
-        box-shadow: $warninghover 0px 10px 30px -10px, $warninghover 0px 5px 10px -10px !important;
-      }
-
-
+      
+      
 
     }
 
   }
 }
+  .btn-warning {
+    border-radius: 20px !important;
+    box-shadow: $warning 0px 10px 20px -12px !important;
+  }
+
+  .btn-warning:hover {
+    background-color: $warninghover !important;
+    box-shadow: $warninghover 0px 10px 30px -10px, $warninghover 0px 5px 10px -10px !important;
+  }

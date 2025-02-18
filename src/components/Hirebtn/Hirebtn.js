@@ -5,9 +5,9 @@ export default function Hirebtn() {
     <div className="container-fluid">
       <div className="row">
         <div className="col-12 ">
-          <div className="hirebtn ">
-            <button className=" btn-hire animate__animated animate__heartBeat animate__infinite animate__slower">
-              <a href="https://www.fiverr.com/ijjazahmad809" target='blank' className='text-white vertical-text'>hire me</a>
+          <div className="hirebtn">
+            <button className="btn-hire animate__animated animate__heartBeat animate__infinite animate__slower">
+              <a href="https://www.fiverr.com/ijjazahmad809" target='blank' className='text-white text-decoration-none vertical-text'>Hime Me</a>
             </button>
           </div>
 

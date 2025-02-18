@@ -1,16 +1,16 @@
 @import './color';
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import './header';
 @import './loader';
 @import './home';
 @import './footer';
-@import './form';
-@import './project';
+@import './contact';
 @import './services';
 
 .bgDark {
-  background-color: $dark ;
+  background-color: $dark !important;
 }
 
 
@@ -18,20 +18,24 @@
 .hirebtn {
   z-index: 111;
   position: fixed;
-    bottom: 80px;
-    right: 25px;
-  .btn-hire  {
-    border-radius: 20px;
+  bottom: 80px;
+  right: 25px;
+
+  .btn-hire {
+    border-radius: 5px;
     background-color: $warning;
     color: #fff;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    transition: opacity 0.3s ease-in-out; /* Optional transition for smoother appearance */
-    opacity: 1; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    /* Optional transition for smoother appearance */
+    opacity: 1;
+    /* Initially hidden */
     box-shadow: $warning 0px 10px 20px -12px;
-    
+
     padding: 10px 2px !important;
+
     .vertical-text {
       writing-mode: vertical-rl;
       /* Vertical text from right to left */
@@ -49,7 +53,6 @@
   }
 }
 
-
 // ------------------ scrolebar styling
 /* width */
 ::-webkit-scrollbar {
@@ -64,11 +67,29 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $warninghover;
+  background: $warning;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $namecolor;
+  background: $warning;
+}
+
+#root {
+  font-family: "Poppins", serif !important;
+}
+
+.bg {
+  background-image: url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 48% !important;
+  }
 }
