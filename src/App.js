@@ -4,12 +4,12 @@ import Routes from './pages/Routes'
 
 function App() {
 
-  const [isApploading , setIsApploading]= useState(true)
-  useEffect(()=>{
-      setTimeout(()=>{
-          setIsApploading(false)
-      }, 2000)
-  },[])
+  const [isApploading, setIsApploading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setIsApploading(false)
+    }, 2000)
+  }, [])
   if (isApploading) {
     return (
       <div className="loader-container ">

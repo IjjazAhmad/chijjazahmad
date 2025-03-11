@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // ------------ bootstrap js link 
-import '../node_modules/bootstrap/dist/js/bootstrap'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
 // ------------ 
 import { BrowserRouter } from 'react-router-dom';
 

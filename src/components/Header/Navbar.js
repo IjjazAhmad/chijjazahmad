@@ -4,7 +4,6 @@ export default function Navbar() {
   return (
     <>
       <header>
-
         <nav className="navbar navbar-expand-lg bgDark navbar-dark" >
           <div className="container">
             <Link className="navbar-brand animate__animated animate__rotateInDownLeft animate__slow	2s" >I A</Link>
@@ -26,7 +25,7 @@ export default function Navbar() {
                   <Link to="/project"  className="nav-link" >PROJECT</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/contact"  className=" btn btn-warning" >CONTACT</Link>
+                  <Link to="/contact"  className="btn btn-warning px-3" >CONTACT</Link>
                 </li>
               </ul>
 
