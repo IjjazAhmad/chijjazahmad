@@ -43,8 +43,8 @@ export default function HomeHero() {
                 <span className="fw-bold">
                   <Typewriter
                     words={[
-                      "UI Designer",
-                      "Frontend Developer",
+                      "MERN Stack Developer",
+                      "Native Android IOS Developer",
                       "Backend Developer",
                       "Fullstack Developer",
                     ]}
