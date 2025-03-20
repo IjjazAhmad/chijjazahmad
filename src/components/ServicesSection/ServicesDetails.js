@@ -1,11 +1,41 @@
 import React from "react";
 const services = [
-  { img: "fa-brands fa-react", title: "WEB DEVELOPMENT" },
-  { img: "fa-solid fa-code", title: "BACKEND DEVELOPMENT" },
-  { img: "fa-solid fa-database", title: "DATABASE" },
-  { img: "fa-solid fa-server", title: "SERVER" },
-  { img: "fa-solid fa-laptop-code", title: "API INTEGRATION" },
-  { img: "fa-solid fa-cloud-arrow-up", title: "DEPOLYMENT" },
+  {
+    img: "fa-brands fa-react",
+    title: "Website Development",
+    detail:
+      "Focuses on building high-performance web applications using React.js, Next.js, and other related technologies.",
+  },
+  {
+    img: "fa-solid fa-code",
+    title: "Mobile App Development",
+    detail:
+      "Focuses on building high-performance native mobile applications for both Android and iOS platforms.",
+  },
+  {
+    img: "fa-solid fa-database",
+    title: "Real-Time Web & Mobile Solutions",
+    detail:
+      "Provides real-time data solutions features like chat apps, notifications, and live updates for web and mobile applications.",
+  },
+  {
+    img: "fa-solid fa-server",
+    title: "End-to-End Digital Product Development",
+    detail:
+      "Handles everything from ideation to deployment for web and mobile applications.",
+  },
+  {
+    img: "fa-solid fa-laptop-code",
+    title: "API INTEGRATION",
+    detail:
+      "Ensures seamless integration of web and mobile applications with APIs for data exchange and communication.",
+  },
+  {
+    img: "fa-solid fa-cloud-arrow-up",
+    title: "Cloud-Based Application Deployment",
+    detail:
+      "Ensures seamless deployment of web and mobile applications on cloud platforms like AWS, Azure, and Google Cloud.",
+  },
 ];
 export default function ServicesDetails() {
   return (
@@ -30,11 +60,7 @@ export default function ServicesDetails() {
                   <i className={`${service.img} text-white fs-1`}></i>
                 </div>
                 <h4>{service.title}</h4>
-                <p className="text-white-50">
-                  Our full-stack development services cover everything from
-                  front-end design to back-end solutions, ensuring seamless,
-                  scalable, and user-friendly web applications.
-                </p>
+                <p className="text-white-50">{service.detail}</p>
               </div>
             </div>
           ))}
