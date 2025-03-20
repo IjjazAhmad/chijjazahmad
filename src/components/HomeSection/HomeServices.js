@@ -1,24 +1,41 @@
 import React from "react";
 
 const services = [
-  { img: "fa-brands fa-react", title: "REACT JS" },
-  { img: "fa-solid fa-tarp-droplet", title: "TAILWIND CSS" },
-  { img: "fa-solid fa-database", title: "DATABASE" },
+  {
+    img: "fa-brands fa-react",
+    title: "Website Development",
+    detail:
+      "Focuses on building high-performance web applications using React.js, Next.js, and other related technologies.",
+  },
+  {
+    img: "fa-solid fa-code",
+    title: "Mobile App Development",
+    detail:
+      "Focuses on building high-performance native mobile applications for both Android and iOS platforms.",
+  },
+  {
+    img: "fa-solid fa-server",
+    title: "End-to-End Digital Product Development",
+    detail:
+      "Handles everything from ideation to deployment for web and mobile applications.",
+  },
 ];
 
 function HomeServices() {
   return (
     <div className="services_page">
-
       <section className="services-page py-5">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-3">
               <div className="lh-1 text-white">
-                <span data-aos="fade-left">
-                  Who Am I ?
-                </span>
-                <h3 data-aos="fade-left" className="fw-semibold fs-2 text-warning">My Services!</h3>
+                <span data-aos="fade-left">Who Am I ?</span>
+                <h3
+                  data-aos="fade-left"
+                  className="fw-semibold fs-2 text-warning"
+                >
+                  My Services!
+                </h3>
               </div>
             </div>
             {services.map((service, index) => (
@@ -28,9 +45,7 @@ function HomeServices() {
                     <i className={`${service.img} text-white fs-1`}></i>
                   </div>
                   <h4>{service.title}</h4>
-                  <p className="text-white-50">
-                    Our full-stack development services cover everything from front-end design to back-end solutions, ensuring seamless, scalable, and user-friendly web applications.
-                  </p>
+                  <p className="text-white-50">{service.detail}</p>
                 </div>
               </div>
             ))}

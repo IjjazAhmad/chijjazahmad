@@ -1,6 +1,7 @@
 import React from "react";
 import images from "../../images";
 import ProjectShowCase from "../ProjectShowCase/ProjectShowCase";
+import { Link } from "react-router-dom";
 const kalbosoft = [
   {
     title: "Kalbosoft WebSite Home Page",
@@ -68,6 +69,11 @@ export default function HomePortfolio() {
       </div>
       <ProjectShowCase projects={kalbosoft} />
       <ProjectShowCase projects={orderUk} />
+      <div data-aos="fade-left">
+        <Link to="/project" className="text-center text-warning">
+          <p className="text-warning pt-3">See More Projects</p>
+        </Link>
+      </div>
     </div>
   );
 }
