@@ -22,22 +22,14 @@ function ProjectShowCase(props) {
             <span className="badge text-dark bg-warning">
               {selectedProject.category}
             </span>
-            <div className="mt-3">
-              <p>
-                <strong>Project Cost:</strong> {selectedProject.cost}
-              </p>
-              <p>
-                <strong>Project Duration:</strong> {selectedProject.duration}
-              </p>
-            </div>
             <div className="d-flex mt-3">
               {projects.map((project) => (
                 <div
                   key={project}
                   className={`card me-2 border border-2 ${
                     selectedProject.title === project.title
-                      ? "border-warning"
-                      : ""
+                      ? "border-warning opacity-100"
+                      : "opacity-25"
                   }`}
                   style={{ width: "120px", cursor: "pointer" }}
                   onClick={() => setSelectedProject(project)}
