@@ -48,9 +48,10 @@ const Contact = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="contact__widget__item">
+                {" "}
                 <a
                   target="_blank"
-                  href="mailto:ijjazahmad705@gmail.com"
+                  href="mailto:ijjazahmad@hotmail.com"
                   className="text-white-50"
                 >
                   <div className="contact__widget__item__icon">
@@ -58,7 +59,7 @@ const Contact = () => {
                   </div>
                   <div className="contact__widget__item__text">
                     <h4>Email</h4>
-                    <p>ijjazahmad705@gmail.com</p>
+                    <p>ijjazahmad@hotmail.com</p>
                   </div>
                 </a>
               </div>

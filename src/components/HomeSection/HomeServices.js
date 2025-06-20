@@ -3,56 +3,59 @@ import React from "react";
 const services = [
   {
     img: "fa-brands fa-react",
-    title: "Website Development",
+    title: "React.js & Next.js Development",
     detail:
-      "Focuses on building high-performance web applications using React.js, Next.js, and other related technologies.",
+      "Expert React.js and Next.js development services for building high-performance, SEO-friendly web applications with modern JavaScript frameworks and best practices.",
   },
   {
     img: "fa-solid fa-code",
     title: "Mobile App Development",
     detail:
-      "Focuses on building high-performance native mobile applications for both Android and iOS platforms.",
+      "Professional React Native and native mobile app development for iOS and Android platforms, creating responsive and user-friendly mobile applications.",
   },
   {
     img: "fa-solid fa-server",
-    title: "End-to-End Digital Product Development",
+    title: "Full Stack MERN Development",
     detail:
-      "Handles everything from ideation to deployment for web and mobile applications.",
+      "Complete end-to-end development using MongoDB, Express.js, React.js, and Node.js stack for scalable web applications and RESTful APIs.",
   },
 ];
 
 function HomeServices() {
   return (
-    <div className="services_page">
-      <section className="services-page py-5">
+    <section className="services_page" aria-labelledby="services-heading">
+      <div className="services-page py-5">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-3">
               <div className="lh-1 text-white">
-                <span data-aos="fade-left">Who Am I ?</span>
-                <h3
+                <span data-aos="fade-left" className="text-warning small">
+                  What I Offer
+                </span>
+                <h2
+                  id="services-heading"
                   data-aos="fade-left"
                   className="fw-semibold fs-2 text-warning"
                 >
-                  My Services!
-                </h3>
+                  My Development Services
+                </h2>
               </div>
             </div>
             {services.map((service, index) => (
               <div key={index} className="col-lg-4 col-md-6 col-sm-6">
-                <div className="services__item">
-                  <div className="services__item__icon">
+                <article className="services__item">
+                  <div className="services__item__icon" aria-hidden="true">
                     <i className={`${service.img} text-white fs-1`}></i>
                   </div>
-                  <h4>{service.title}</h4>
+                  <h3 className="h4">{service.title}</h3>
                   <p className="text-white-50">{service.detail}</p>
-                </div>
+                </article>
               </div>
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

@@ -1,3 +1,13 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: *.json$
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://chijjazahmad.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
