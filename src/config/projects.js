@@ -1,6 +1,8 @@
 import battingKing1 from "../images/Projects/Batting-King/cover.svg";
 import battingKing2 from "../images/Projects/Batting-King/cover-2.svg";
 import battingKing3 from "../images/Projects/Batting-King/cover-3.svg";
+import battingKing4 from "../images/Projects/Batting-King/cover-4.svg";
+import battingKing5 from "../images/Projects/Batting-King/cover-5.svg";
 import homeWorkRabbitAI from "../images/Projects/Home-Work-Rabbit/cover-1.svg";
 import homeWorkRabbitAI2 from "../images/Projects/Home-Work-Rabbit/cover-2.svg";
 import watcherAd1 from "../images/Projects/Watcher-Admin/cover-1.svg";
@@ -22,22 +24,6 @@ import Estatein_2 from "../images/Projects/Estatein/cover-2.svg";
 export const projects = [
   [
     {
-      title: "Estatein - Real Estate Platform",
-      description:
-        "I developed this comprehensive real estate platform using React.js and modern web technologies. It's a full-stack application featuring property listings, advanced search filters, virtual tours, mortgage calculators, and agent management for professional real estate services.",
-      img: Estatein,
-      category: "Real Estate",
-    },
-    {
-      title: "Estatein - Property Management Website",
-      description:
-        "Advanced property management interface with listing management, client relationship tools, market analytics, lead tracking, and automated valuation models. Built with responsive design to support real estate professionals in managing their business operations.",
-      img: Estatein_2,
-      category: "Real Estate",
-    },
-  ],
-  [
-    {
       title: "HomeworkRabbit - AI Study Platform",
       description:
         "I developed this comprehensive AI-powered academic assistance platform using Next.js and modern web technologies. It's a full-stack educational application that provides intelligent tutoring, homework help, assignment solutions, and personalized learning experiences for students across various subjects.",
@@ -50,38 +36,6 @@ export const projects = [
         "Advanced student dashboard featuring AI-driven homework assistance, real-time progress tracking, subject-specific tutoring modules, and collaborative study tools. Built with responsive design to support seamless learning across desktop and mobile devices.",
       img: homeWorkRabbitAI2,
       category: "Educational Platform",
-    },
-  ],
-  [
-    {
-      title: "Watcher Admin - Main Dashboard",
-      description:
-        "I built this comprehensive admin monitoring platform using React.js and modern CSS frameworks. It's a full-stack application featuring real-time system monitoring, user management, analytics reporting, and automated alert systems for efficient administrative oversight.",
-      img: watcherAd1,
-      category: "Admin Dashboard",
-    },
-    {
-      title: "Watcher Admin - Analytics Panel",
-      description:
-        "Advanced analytics dashboard with real-time data visualization, performance metrics tracking, user behavior analysis, and comprehensive reporting tools. Built with responsive design to provide seamless administrative control across all devices.",
-      img: watcherAd2,
-      category: "Admin Dashboard",
-    },
-    {
-      title: "Watcher Admin - Security Control Center",
-      description:
-        "Comprehensive security monitoring interface featuring threat detection, access control management, audit logging, and automated security protocols. Provides administrators with complete oversight of system security and user access management.",
-      img: watcherAd3,
-      category: "Admin Dashboard",
-    },
-  ],
-  [
-    {
-      title: "Natural Cosmetics - E-commerce Platform",
-      description:
-        "I developed this comprehensive natural cosmetics e-commerce platform using Next.js and Tailwind CSS. It's a full-stack application featuring product catalog management, secure payment processing, customer reviews, ingredient transparency, and subscription-based delivery for organic beauty products.",
-      img: nutralaCosmetics,
-      category: "E-commerce Website",
     },
   ],
   [
@@ -106,14 +60,19 @@ export const projects = [
       img: battingKing3,
       category: "Gaming Dashboard",
     },
-  ],
-  [
     {
-      title: "Kalbosoft - Agency Website",
+      title: "Batting King - User Analytics Panel",
       description:
-        "I developed this professional agency website for Kalbosoft using Next.js and Tailwind CSS. It's a full-stack application featuring company portfolio showcase, service listings, client testimonials, contact management, and content management system for digital agency operations.",
-      img: kalbosoft,
-      category: "Agency Website",
+        "Comprehensive analytics dashboard for betting statistics, win/loss tracking, performance metrics, and detailed reporting. Features interactive charts and data visualization to help users analyze their betting patterns and success rates.",
+      img: battingKing4,
+      category: "Gaming Dashboard",
+    },
+    {
+      title: "Batting King - User Analytics Panel",
+      description:
+        "Comprehensive analytics dashboard for betting statistics, win/loss tracking, performance metrics, and detailed reporting. Features interactive charts and data visualization to help users analyze their betting patterns and success rates.",
+      img: battingKing5,
+      category: "Gaming Dashboard",
     },
   ],
   [
@@ -127,9 +86,9 @@ export const projects = [
   ],
   [
     {
-      title: "Bike Shopping App - E-commerce Platform",
+      title: "Bike Shopping App",
       description:
-        "I developed this food delivery platform using Next.js and Tailwind CSS. It's a full-stack application featuring order management, restaurant search, payment processing, and delivery tracking for online food ordering experience.",
+        "I developed this comprehensive bike shopping application using React.js and modern web technologies. It's a full-stack e-commerce platform featuring product listings, advanced search filters, secure payment processing, customer reviews, and order management for a seamless online shopping experience.",
       img: bikeShopping,
       category: "E-commerce Website",
     },
@@ -169,6 +128,63 @@ export const projects = [
         "Event planning and educational program management system featuring class scheduling, workshop organization, religious education tracking, and community event coordination for comprehensive mosque program management.",
       img: rafiq_1,
       category: "Mosque Management",
+    },
+  ],
+  [
+    {
+      title: "Watcher Admin - Main Dashboard",
+      description:
+        "I built this comprehensive admin monitoring platform using React.js and modern CSS frameworks. It's a full-stack application featuring real-time system monitoring, user management, analytics reporting, and automated alert systems for efficient administrative oversight.",
+      img: watcherAd1,
+      category: "Admin Dashboard",
+    },
+    {
+      title: "Watcher Admin - Analytics Panel",
+      description:
+        "Advanced analytics dashboard with real-time data visualization, performance metrics tracking, user behavior analysis, and comprehensive reporting tools. Built with responsive design to provide seamless administrative control across all devices.",
+      img: watcherAd2,
+      category: "Admin Dashboard",
+    },
+    {
+      title: "Watcher Admin - Security Control Center",
+      description:
+        "Comprehensive security monitoring interface featuring threat detection, access control management, audit logging, and automated security protocols. Provides administrators with complete oversight of system security and user access management.",
+      img: watcherAd3,
+      category: "Admin Dashboard",
+    },
+  ],
+  [
+    {
+      title: "Kalbosoft - Agency Website",
+      description:
+        "I developed this professional agency website for Kalbosoft using Next.js and Tailwind CSS. It's a full-stack application featuring company portfolio showcase, service listings, client testimonials, contact management, and content management system for digital agency operations.",
+      img: kalbosoft,
+      category: "Agency Website",
+    },
+  ],
+  [
+    {
+      title: "Estatein - Real Estate Platform",
+      description:
+        "I developed this comprehensive real estate platform using React.js and modern web technologies. It's a full-stack application featuring property listings, advanced search filters, virtual tours, mortgage calculators, and agent management for professional real estate services.",
+      img: Estatein,
+      category: "Real Estate",
+    },
+    {
+      title: "Estatein - Property Management Website",
+      description:
+        "Advanced property management interface with listing management, client relationship tools, market analytics, lead tracking, and automated valuation models. Built with responsive design to support real estate professionals in managing their business operations.",
+      img: Estatein_2,
+      category: "Real Estate",
+    },
+  ],
+  [
+    {
+      title: "Natural Cosmetics - E-commerce Platform",
+      description:
+        "I developed this comprehensive natural cosmetics e-commerce platform using Next.js and Tailwind CSS. It's a full-stack application featuring product catalog management, secure payment processing, customer reviews, ingredient transparency, and subscription-based delivery for organic beauty products.",
+      img: nutralaCosmetics,
+      category: "E-commerce Website",
     },
   ],
   [

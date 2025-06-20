@@ -2,13 +2,15 @@ import ContactForm from "../../../components/Form/ContactForm";
 
 const Contact = () => {
   return (
-    <div>
-      <div className='bg'>
+    <>
+      <div>
         <div className="container">
           <div className="row">
             <div className="col py-5 text-white  text-center">
               <h1>Contact Us</h1>
-              <p className='gap-3 align-items-center justify-content-center d-flex'>Home <i class="fa-solid fa-arrow-right-long"></i> Contact</p>
+              <p className="gap-3 align-items-center justify-content-center d-flex">
+                Home <i class="fa-solid fa-arrow-right-long"></i> Contact
+              </p>
             </div>
           </div>
         </div>
@@ -29,7 +31,11 @@ const Contact = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="contact__widget__item">
-                <a href="https://wa.me/923267876344" target='_blank' className="text-white-50">
+                <a
+                  href="https://wa.me/923267876344"
+                  target="_blank"
+                  className="text-white-50"
+                >
                   <div className="contact__widget__item__icon">
                     <i className="fa fa-phone"></i>
                   </div>
@@ -42,7 +48,11 @@ const Contact = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="contact__widget__item">
-                <a target='_blank' href="mailto:ijjazahmad705@gmail.com" className="text-white-50">
+                <a
+                  target="_blank"
+                  href="mailto:ijjazahmad705@gmail.com"
+                  className="text-white-50"
+                >
                   <div className="contact__widget__item__icon">
                     <i className="fa fa-envelope"></i>
                   </div>
@@ -57,7 +67,7 @@ const Contact = () => {
         </div>
       </section>
       <ContactForm />
-    </div>
+    </>
   );
 };
 

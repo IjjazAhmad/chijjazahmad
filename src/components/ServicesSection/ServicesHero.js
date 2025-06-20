@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
 export default function ServicesHero() {
-    return (
-        <div className='bg'>
-            <div className="container">
-                <div className="row">
-                    <div className="col py-5 text-white  text-center">
-                        <h1>Our Services</h1>
-                        <p className='gap-3 align-items-center justify-content-center d-flex'>Home <i class="fa-solid fa-arrow-right-long"></i> Services</p>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col py-5 text-white  text-center">
+          <h1>Our Services</h1>
+          <p className="gap-3 align-items-center justify-content-center d-flex">
+            Home <i class="fa-solid fa-arrow-right-long"></i> Services
+          </p>
         </div>
-    )
+      </div>
+    </div>
+  );
 }

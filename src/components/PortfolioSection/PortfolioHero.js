@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function PortfolioHero() {
     return (
-        <div className='bg'>
             <div className="container">
                 <div className="row">
                     <div className="col py-5 text-white  text-center">
@@ -11,6 +10,5 @@ export default function PortfolioHero() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
