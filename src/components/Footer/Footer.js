@@ -10,29 +10,23 @@ export default function Footer() {
               <p className="p-0">
                 &copy; {year}. All Right Reserved By Ijjaz Ahmad
               </p>
-            </div>
+            </div>{" "}
             <div className="col-12 col-mg-6 col-lg-6 d-lg-flex justify-content-end">
               <div className="ico">
-                <a
-                  href="https://www.facebook.com/ijjaz.ahmad.7902"
-                  target="blank"
-                >
+                <a href="https://www.facebook.com/ijjazdev" target="blank">
                   <i className="fa-brands fa-facebook"></i>
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UC8vfBs76i-uEBWyl43C6Fow"
+                  href="https://www.instagram.com/ch_ijjazahmad"
                   target="blank"
                 >
-                  <i className="fa-brands fa-youtube"></i>
-                </a>
-                <a href="https://www.instagram.com/ijjaz.a" target="blank">
                   <i className="fa-brands fa-instagram "></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ijjazahmad" target="blank">
+                  <i className="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/IjjazAhmad" target="blank">
                   <i className="fa-brands fa-github"></i>
-                </a>
-                <a href="https://twitter.com/ijjaz_ahmad" target="blank">
-                  <i className="fa-brands fa-twitter"></i>
                 </a>
               </div>
             </div>
