@@ -1,6 +1,7 @@
 import React from "react";
-import About from "../../images/about.png";
 import { Link } from "react-router-dom";
+
+const About = "/images/about.png";
 
 function HomeAbout() {
   return (

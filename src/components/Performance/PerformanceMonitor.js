@@ -6,11 +6,12 @@ const PerformanceMonitor = () => {
     import("web-vitals").then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
       function sendToAnalytics(metric) {
         // Send to console for now, replace with your analytics service
-        console.log("Web Vital:", metric.name, metric.value, metric.rating);
-
-        // Example: Send to Google Analytics
-        if (typeof gtag !== "undefined") {
-          gtag("event", metric.name, {
+        console.log("Web Vital:", metric.name, metric.value, metric.rating); // Example: Send to Google Analytics
+        if (
+          typeof window !== "undefined" &&
+          typeof window.gtag !== "undefined"
+        ) {
+          window.gtag("event", metric.name, {
             event_category: "Web Vitals",
             value: Math.round(
               metric.name === "CLS" ? metric.value * 1000 : metric.value

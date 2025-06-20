@@ -1,26 +1,27 @@
-import battingKing1 from "../images/Projects/Batting-King/cover.svg";
-import battingKing2 from "../images/Projects/Batting-King/cover-2.svg";
-import battingKing3 from "../images/Projects/Batting-King/cover-3.svg";
-import battingKing4 from "../images/Projects/Batting-King/cover-4.svg";
-import battingKing5 from "../images/Projects/Batting-King/cover-5.svg";
-import homeWorkRabbitAI from "../images/Projects/Home-Work-Rabbit/cover-1.svg";
-import homeWorkRabbitAI2 from "../images/Projects/Home-Work-Rabbit/cover-2.svg";
-import watcherAd1 from "../images/Projects/Watcher-Admin/cover-1.svg";
-import watcherAd2 from "../images/Projects/Watcher-Admin/cover-2.svg";
-import watcherAd3 from "../images/Projects/Watcher-Admin/cover-3.svg";
-import nutralaCosmetics from "../images/Projects/Naturla-Cosmetics/cover.svg";
-import kalbosoft from "../images/Projects/Kalbosoft/cover.svg";
-import orderUK from "../images/Projects/Order.Uk/cover.svg";
-import bikeShopping from "../images/Projects/Online Bike Shopping App/cover.svg";
-import rafiq_1 from "../images/Projects/Rafiq-Dashboard/cover.svg";
-import rafiq_2 from "../images/Projects/Rafiq-Dashboard/cover-2.svg";
-import rafiq_3 from "../images/Projects/Rafiq-Dashboard/cover-3.svg";
-import rafiq_4 from "../images/Projects/Rafiq-Dashboard/cover-4.svg";
-import rafiq_5 from "../images/Projects/Rafiq-Dashboard/cover-5.svg";
-import URLShortner_1 from "../images/Projects/URL-Shortner-App/cover.svg";
-import URLShortner_2 from "../images/Projects/URL-Shortner-App/conver-2.svg";
-import Estatein from "../images/Projects/Estatein/cover.svg";
-import Estatein_2 from "../images/Projects/Estatein/cover-2.svg";
+// Using public URLs for better performance and to avoid bundle size issues
+const battingKing1 = "/images/Projects/Batting-King/cover.svg";
+const battingKing2 = "/images/Projects/Batting-King/cover-2.svg";
+const battingKing3 = "/images/Projects/Batting-King/cover-3.svg";
+const battingKing4 = "/images/Projects/Batting-King/cover-4.svg";
+const battingKing5 = "/images/Projects/Batting-King/cover-5.svg";
+const homeWorkRabbitAI = "/images/Projects/Home-Work-Rabbit/cover-1.svg";
+const homeWorkRabbitAI2 = "/images/Projects/Home-Work-Rabbit/cover-2.svg";
+const watcherAd1 = "/images/Projects/Watcher-Admin/cover-1.svg";
+const watcherAd2 = "/images/Projects/Watcher-Admin/cover-2.svg";
+const watcherAd3 = "/images/Projects/Watcher-Admin/cover-3.svg";
+const nutralaCosmetics = "/images/Projects/Naturla-Cosmetics/cover.svg";
+const kalbosoft = "/images/Projects/Kalbosoft/cover.svg";
+const orderUK = "/images/Projects/Order.Uk/cover.svg";
+const bikeShopping = "/images/Projects/Online Bike Shopping App/cover.svg";
+const rafiq_1 = "/images/Projects/Rafiq-Dashboard/cover.svg";
+const rafiq_2 = "/images/Projects/Rafiq-Dashboard/cover-2.svg";
+const rafiq_3 = "/images/Projects/Rafiq-Dashboard/cover-3.svg";
+const rafiq_4 = "/images/Projects/Rafiq-Dashboard/cover-4.svg";
+const rafiq_5 = "/images/Projects/Rafiq-Dashboard/cover-5.svg";
+const URLShortner_1 = "/images/Projects/URL-Shortner-App/cover.svg";
+const URLShortner_2 = "/images/Projects/URL-Shortner-App/conver-2.svg";
+const Estatein = "/images/Projects/Estatein/cover.svg";
+const Estatein_2 = "/images/Projects/Estatein/cover-2.svg";
 export const projects = [
   [
     {
