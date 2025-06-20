@@ -40,35 +40,35 @@ export const projects = [
   ],
   [
     {
-      title: "Batting King - Main Dashboard",
+      title: "Batting King - Live Betting Interface",
       description:
         "I built this comprehensive bet gaming platform using React.js and modern CSS frameworks. It's a full-stack betting application featuring real-time odds, user account management, betting history, and secure payment processing for sports betting enthusiasts.",
       img: battingKing1,
       category: "Gaming Dashboard",
     },
     {
-      title: "Batting King - Live Betting Interface",
+      title: "Batting King - Betting Categories",
       description:
         "Advanced live betting interface with real-time score updates, dynamic odds calculation, and instant bet placement functionality. Built with responsive design to ensure seamless experience across all devices for sports betting.",
       img: battingKing2,
       category: "Gaming Dashboard",
     },
     {
-      title: "Batting King - User Analytics Panel",
+      title: "Batting King - Transaction History",
       description:
         "Comprehensive analytics dashboard for betting statistics, win/loss tracking, performance metrics, and detailed reporting. Features interactive charts and data visualization to help users analyze their betting patterns and success rates.",
       img: battingKing3,
       category: "Gaming Dashboard",
     },
     {
-      title: "Batting King - User Analytics Panel",
+      title: "Batting King - Payment Processing",
       description:
         "Comprehensive analytics dashboard for betting statistics, win/loss tracking, performance metrics, and detailed reporting. Features interactive charts and data visualization to help users analyze their betting patterns and success rates.",
       img: battingKing4,
       category: "Gaming Dashboard",
     },
     {
-      title: "Batting King - User Analytics Panel",
+      title: "Batting King - Dashboard",
       description:
         "Comprehensive analytics dashboard for betting statistics, win/loss tracking, performance metrics, and detailed reporting. Features interactive charts and data visualization to help users analyze their betting patterns and success rates.",
       img: battingKing5,
