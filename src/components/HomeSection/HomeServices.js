@@ -2,22 +2,22 @@ import React from "react";
 
 const services = [
   {
-    img: "fa-brands fa-react",
-    title: "React.js & Next.js Development",
-    detail:
-      "Expert React.js and Next.js development services for building high-performance, SEO-friendly web applications with modern JavaScript frameworks and best practices.",
+    icon: "fa-brands fa-react",
+    title: "React / Next.JS",
+    description: "Modern, fast, and interactive SPAs with cutting-edge frameworks and optimized performance",
+    stack: ["React 18", "Next.js", "TypeScript"],
   },
   {
-    img: "fa-solid fa-code",
-    title: "Mobile App Development",
-    detail:
-      "Professional React Native and native mobile app development for iOS and Android platforms, creating responsive and user-friendly mobile applications.",
+    icon: "fa-solid fa-mobile-screen",
+    title: "Mobile Development",
+    description: "High-performance native mobile applications for iOS and Android with seamless UX",
+    stack: ["React Native", "Flutter", "Native APIs"],
   },
   {
-    img: "fa-solid fa-server",
-    title: "Full Stack MERN Development",
-    detail:
-      "Complete end-to-end development using MongoDB, Express.js, React.js, and Node.js stack for scalable web applications and RESTful APIs.",
+    icon: "fa-solid fa-database",
+    title: "Full Stack (MERN)",
+    description: "Complete web solutions from database architecture to polished user interfaces",
+    stack: ["MongoDB", "Express", "Node.js"],
   },
 ];
 
@@ -25,30 +25,47 @@ function HomeServices() {
   return (
     <section className="services_page" aria-labelledby="services-heading">
       <div className="services-page py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center mb-3">
-              <div className="lh-1 text-white">
-                <span data-aos="fade-left" className="text-warning small">
-                  What I Offer
-                </span>
-                <h2
-                  id="services-heading"
-                  data-aos="fade-left"
-                  className="fw-semibold fs-2 text-warning"
-                >
-                  My Development Services
-                </h2>
+        <div className="container py-5">
+          <div className="row mb-5">
+            <div className="col-12 text-center">
+              <div className="section__label" data-aos="fade-up">
+                &lt; what_i_do /&gt;
               </div>
+              <h2 
+                id="services-heading"
+                className="section__title" 
+                data-aos="fade-up" 
+                data-aos-delay="100"
+              >
+                Services & Expertise
+              </h2>
+              <p className="section__subtitle" data-aos="fade-up" data-aos-delay="200">
+                Building digital experiences with modern technologies
+              </p>
             </div>
+          </div>
+
+          <div className="row g-4">
             {services.map((service, index) => (
-              <div key={index} className="col-lg-4 col-md-6 col-sm-6">
+              <div
+                key={index}
+                className="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <article className="services__item">
+                  <div className="services__number">0{index + 1}</div>
                   <div className="services__item__icon" aria-hidden="true">
-                    <i className={`${service.img} text-white fs-1`}></i>
+                    <i className={service.icon}></i>
+                    <div className="icon__glow"></div>
                   </div>
                   <h3 className="h4">{service.title}</h3>
-                  <p className="text-white-50">{service.detail}</p>
+                  <p>{service.description}</p>
+                  <div className="services__stack">
+                    {service.stack.map((tech, idx) => (
+                      <span key={idx} className="stack__tag">{tech}</span>
+                    ))}
+                  </div>
                 </article>
               </div>
             ))}

@@ -1,66 +1,92 @@
 import React from "react";
+
 const services = [
   {
     img: "fa-brands fa-react",
     title: "Website Development",
     detail:
-      "Focuses on building high-performance web applications using React.js, Next.js, and other related technologies.",
+      "High-performance web applications using React.js, Next.js, and cutting-edge frontend technologies for blazing-fast user experiences.",
+    features: ["SPA Architecture", "SSR & SSG", "PWA Support"],
   },
   {
     img: "fa-solid fa-code",
     title: "Mobile App Development",
     detail:
-      "Focuses on building high-performance native mobile applications for both Android and iOS platforms.",
+      "Native mobile applications for Android and iOS platforms with seamless performance and intuitive interfaces.",
+    features: ["Cross-Platform", "Native APIs", "Offline Mode"],
   },
   {
     img: "fa-solid fa-database",
-    title: "Real-Time Web & Mobile Solutions",
+    title: "Real-Time Solutions",
     detail:
-      "Provides real-time data solutions features like chat apps, notifications, and live updates for web and mobile applications.",
+      "Real-time data synchronization with chat apps, notifications, and live updates for engaging web and mobile experiences.",
+    features: ["WebSockets", "Live Updates", "Push Notifications"],
   },
   {
     img: "fa-solid fa-server",
-    title: "End-to-End Digital Product Development",
+    title: "End-to-End Development",
     detail:
-      "Handles everything from ideation to deployment for web and mobile applications.",
+      "Complete digital product lifecycle from ideation and design to deployment and maintenance for web and mobile platforms.",
+    features: ["MVP Development", "Scaling", "Maintenance"],
   },
   {
     img: "fa-solid fa-laptop-code",
-    title: "API INTEGRATION",
+    title: "API Integration",
     detail:
-      "Ensures seamless integration of web and mobile applications with APIs for data exchange and communication.",
+      "Seamless integration with third-party APIs and services for data exchange, payment processing, and enhanced functionality.",
+    features: ["REST APIs", "GraphQL", "Webhooks"],
   },
   {
     img: "fa-solid fa-cloud-arrow-up",
-    title: "Cloud-Based Application Deployment",
+    title: "Cloud Deployment",
     detail:
-      "Ensures seamless deployment of web and mobile applications on cloud platforms like AWS, Azure, and Google Cloud.",
+      "Scalable cloud infrastructure deployment on AWS, Azure, and Google Cloud with automated CI/CD pipelines and monitoring.",
+    features: ["Auto-Scaling", "Load Balancing", "DevOps"],
   },
 ];
+
 export default function ServicesDetails() {
   return (
     <section className="services-page py-5">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 mb-3">
-            <div className="lh-1 text-white">
-              <span data-aos="fade-left">Who Am I ?</span>
-              <h3
-                data-aos="fade-left"
-                className="fw-semibold fs-2 text-warning"
-              >
-                My Services!
-              </h3>
+      <div className="container py-5">
+        <div className="row mb-5">
+          <div className="col-12 text-center">
+            <div className="section__label" data-aos="fade-up">
+              &lt; expertise /&gt;
             </div>
+            <h3 className="section__title" data-aos="fade-up" data-aos-delay="100">
+              Complete Service Portfolio
+            </h3>
+            <p className="section__subtitle" data-aos="fade-up" data-aos-delay="200">
+              Comprehensive solutions for your digital transformation
+            </p>
           </div>
+        </div>
+
+        <div className="row g-4">
           {services.map((service, index) => (
-            <div key={index} className="col-lg-4 col-md-6 col-sm-6">
+            <div 
+              key={index} 
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
+            >
               <div className="services__item">
+                <div className="services__number">0{index + 1}</div>
                 <div className="services__item__icon">
-                  <i className={`${service.img} text-white fs-1`}></i>
+                  <i className={service.img}></i>
+                  <div className="icon__glow"></div>
                 </div>
                 <h4>{service.title}</h4>
-                <p className="text-white-50">{service.detail}</p>
+                <p>{service.detail}</p>
+                <div className="services__features">
+                  {service.features.map((feature, idx) => (
+                    <span key={idx} className="feature__tag">
+                      <i className="fa-solid fa-check"></i>
+                      {feature}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

@@ -2,14 +2,12 @@ import React from "react";
 
 export default function AboutHero() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col py-5 text-white  text-center">
-          <h1>About Me</h1>
-          <p className="gap-3 align-items-center justify-content-center d-flex">
-            Home <i class="fa-solid fa-arrow-right-long"></i> About
-          </p>
-        </div>
+    <div className="about-hero">
+      <h1 data-aos="fade-down">About Me</h1>
+      <div className="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+        <span>Home</span>
+        <i className="fa-solid fa-arrow-right-long"></i>
+        <span>About</span>
       </div>
     </div>
   );

@@ -5,43 +5,52 @@ function ProjectShowCase(props) {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
   return (
-    <div className="container my-2">
-      <div className="card bgDark text-white shadow-lg p-4 border-0">
-        <div className="row d-flex align-items-center">
-          <div className="col-12 col-md-6">
-            <img
-              src={selectedProject.img}
-              className="card-img"
-              alt="Thumbnail"
-              style={{ height: "350px", width: "100%" }}
-            />
-          </div>
-          <div className="col-12 col-md-6">
-            <h4>{selectedProject.title}</h4>
-            <p className="text-white-50">{selectedProject.description}</p>
-            <span className="badge text-dark bg-warning">
-              {selectedProject.category}
-            </span>
-            <div className="d-flex mt-3">
-              {projects.map((project) => (
-                <div
-                  key={project}
-                  className={`card me-2 border border-2 ${
-                    selectedProject.title === project.title
-                      ? "border-warning opacity-100"
-                      : "opacity-25"
-                  }`}
-                  style={{ width: "120px", cursor: "pointer" }}
-                  onClick={() => setSelectedProject(project)}
-                >
+    <div className="col-12">
+      <div className="project__showcase">
+        <div className="showcase__content">
+          <div className="row g-4 align-items-center">
+            <div className="col-lg-6">
+              <div className="showcase__image">
+                <div className="image__wrapper">
                   <img
-                    src={project.img}
-                    className="card-img-top"
-                    alt="Thumbnail"
-                    style={{ height: "80px", objectFit: "cover" }}
+                    src={selectedProject.img}
+                    alt={selectedProject.title}
                   />
+                  <div className="image__overlay"></div>
+                  <div className="image__corners">
+                    <span className="corner top-left"></span>
+                    <span className="corner top-right"></span>
+                    <span className="corner bottom-left"></span>
+                    <span className="corner bottom-right"></span>
+                  </div>
                 </div>
-              ))}
+              </div>
+            </div>
+            
+            <div className="col-lg-6">
+              <div className="showcase__details">
+                <div className="project__category">
+                  <i className="fa-solid fa-tag"></i>
+                  {selectedProject.category}
+                </div>
+                <h3 className="project__title">{selectedProject.title}</h3>
+                <p className="project__description">{selectedProject.description}</p>
+                
+                <div className="project__thumbnails">
+                  {projects.map((project, idx) => (
+                    <div
+                      key={idx}
+                      className={`thumbnail__item ${
+                        selectedProject.title === project.title ? "active" : ""
+                      }`}
+                      onClick={() => setSelectedProject(project)}
+                    >
+                      <img src={project.img} alt={project.title} />
+                      <div className="thumbnail__overlay"></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

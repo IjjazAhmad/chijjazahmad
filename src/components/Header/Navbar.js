@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const isActive = (path) => {
     return location.pathname === path ? "nav-link active" : "nav-link";
@@ -11,17 +21,20 @@ export default function Navbar() {
   return (
     <header role="banner">
       <nav
-        className="navbar navbar-expand-lg bgDark navbar-dark"
+        className={`navbar navbar-expand-lg navbar-dark ${scrolled ? 'scrolled' : ''}`}
         role="navigation"
         aria-label="Main navigation"
       >
         <div className="container">
           <Link
             to="/"
-            className="navbar-brand animate__animated animate__rotateInDownLeft animate__slow"
+            className="navbar-brand"
             aria-label="Ijjaz Ahmad - Full Stack Developer Home"
           >
-            I A
+            <span className="brand__bracket">&lt;</span>
+            <span className="brand__text">IA</span>
+            <span className="brand__bracket">/&gt;</span>
+            <span className="brand__dot"></span>
           </Link>
           <button
             className="navbar-toggler"
@@ -32,7 +45,9 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation menu"
           >
-            <i className="fa-solid fa-ellipsis-vertical" aria-hidden="true"></i>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0" role="menubar">
@@ -43,7 +58,8 @@ export default function Navbar() {
                   role="menuitem"
                   aria-current={location.pathname === "/" ? "page" : undefined}
                 >
-                  HOME
+                  <span className="nav__number">01</span>
+                  <span className="nav__text">HOME</span>
                 </Link>
               </li>
               <li className="nav-item" role="none">
@@ -55,7 +71,8 @@ export default function Navbar() {
                     location.pathname === "/about" ? "page" : undefined
                   }
                 >
-                  ABOUT
+                  <span className="nav__number">02</span>
+                  <span className="nav__text">ABOUT</span>
                 </Link>
               </li>
               <li className="nav-item" role="none">
@@ -67,7 +84,8 @@ export default function Navbar() {
                     location.pathname === "/service" ? "page" : undefined
                   }
                 >
-                  SERVICES
+                  <span className="nav__number">03</span>
+                  <span className="nav__text">SERVICES</span>
                 </Link>
               </li>
               <li className="nav-item" role="none">
@@ -79,17 +97,19 @@ export default function Navbar() {
                     location.pathname === "/project" ? "page" : undefined
                   }
                 >
-                  PROJECTS
+                  <span className="nav__number">04</span>
+                  <span className="nav__text">PROJECTS</span>
                 </Link>
               </li>
               <li className="nav-item" role="none">
                 <Link
                   to="/contact"
-                  className="btn btn-warning px-3"
+                  className="nav__cta"
                   role="menuitem"
                   aria-label="Contact Ijjaz Ahmad for your project"
                 >
-                  CONTACT
+                  <i className="fa-solid fa-paper-plane"></i>
+                  <span>CONTACT</span>
                 </Link>
               </li>
             </ul>

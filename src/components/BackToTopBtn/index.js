@@ -19,8 +19,13 @@ function BackToTopButton() {
   };
 
   return (
-    <button className="back-to-top" onClick={handleClick} style={{ display: isVisible ? 'block' : 'none' }}>
-      <i class="fa-solid fa-arrow-up"></i>
+    <button 
+      className={`back-to-top ${isVisible ? 'visible' : ''}`} 
+      onClick={handleClick}
+      aria-label="Scroll to top"
+    >
+      <i className="fa-solid fa-arrow-up"></i>
+      <div className="button__glow"></div>
     </button>
   );
 }

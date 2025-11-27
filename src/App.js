@@ -18,7 +18,10 @@ function App() {
   if (isApploading) {
     return (
       <div className="loader-container">
-        <span className="loader" aria-label="Loading website content"></span>
+        <div className="loader" aria-label="Loading website content">
+          <span></span>
+        </div>
+        <div className="loading-text">Loading</div>
       </div>
     );
   }

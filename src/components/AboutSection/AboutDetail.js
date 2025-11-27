@@ -4,45 +4,42 @@ const About = "/images/about.png";
 
 export default function AboutDetail() {
   return (
-    <div className="container">
-      <div className="row my-5 align-items-center text-white-50">
-        <div className="col-12 col-md-6 col-lg-4">
-          <img
-            data-aos="zoom-in"
-            src={About}
-            alt="About"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-12 col-md-6 col-lg-8">
-          <div className="lh-1 text-white">
-            <span data-aos="fade-left">Who Am I ?</span>
-            <h3 data-aos="fade-left" className="fw-semibold fs-2 text-warning">
-              About Me!
-            </h3>
+    <div className="about-detail">
+      <div className="row align-items-center">
+        <div className="col-12 col-md-6 col-lg-5" data-aos="fade-right">
+          <div className="about-image">
+            <img
+              src={About}
+              alt="About Ijjaz Ahmad - Full Stack Developer"
+              className="img-fluid"
+            />
           </div>
-          <p data-aos="fade-left" className="py-1">
-            I’m Ijjaz Ahmad, a passionate Full Stack Developer with expertise in
-            both frontend and backend technologies. I specialize in building
-            dynamic, scalable, and user-friendly web applications.
-          </p>
-          <p data-aos="fade-left">
-            With a strong foundation in modern frameworks and databases, I
-            create seamless digital experiences. My focus is on writing clean,
-            efficient code to deliver high-performance solutions. Let’s
-            collaborate to bring your ideas to life!
-          </p>
-          <div data-aos="fade-left">
+        </div>
+        <div className="col-12 col-md-6 col-lg-7" data-aos="fade-left" data-aos-delay="200">
+          <div className="about-content">
+            <span className="section-label">Who Am I?</span>
+            <h3>About Me!</h3>
+            <p>
+              I'm Ijjaz Ahmad, a passionate Full Stack Developer with expertise in
+              both frontend and backend technologies. I specialize in building
+              dynamic, scalable, and user-friendly web applications.
+            </p>
+            <p>
+              With a strong foundation in modern frameworks and databases, I
+              create seamless digital experiences. My focus is on writing clean,
+              efficient code to deliver high-performance solutions. Let's
+              collaborate to bring your ideas to life!
+            </p>
             <button
               type="button"
-              className="btn btn-warning text-decoration-none px-3"
+              className="btn"
             >
               <a
                 href="https://wa.me/+923267876344"
-                className="text-white"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                Message
+                Message Me
               </a>
             </button>
           </div>

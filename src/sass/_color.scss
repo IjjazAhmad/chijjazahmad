@@ -1,9 +1,57 @@
-$warning: #00b4d8;
-$warninghover: #48cae4;
-$namecolor :#48cae4;
-$typewordcolor: #0077b6;
-$dark : #1f242d;
-$secondary : #323946;
-$white: #fff;
+// Primary Color Palette
+$primary: #6366f1;           // Modern Indigo
+$primary-light: #818cf8;     // Light Indigo
+$primary-dark: #4f46e5;      // Dark Indigo
+$accent: #ec4899;            // Vibrant Pink
+$accent-light: #f472b6;      // Light Pink
+$accent-dark: #db2777;       // Deep Pink
+$secondary: #06b6d4;         // Cyan
+$secondary-light: #22d3ee;   // Light Cyan
+$secondary-dark: #0891b2;    // Dark Cyan
+
+// Neutral Colors
+$dark: #0f172a;              // Slate 900
+$dark-alt: #1e293b;          // Slate 800
+$dark-emphasis: #020617;     // Slate 950
+$gray: #64748b;              // Slate 500
+$gray-light: #cbd5e1;        // Slate 300
+$gray-lighter: #f1f5f9;      // Slate 100
+$white: #ffffff;
+
+// Semantic Colors
+$warning: $primary;
+$warninghover: $primary-light;
+$namecolor: $secondary-light;
+$typewordcolor: $secondary;
+
+// Gradients
+$gradient-primary: linear-gradient(135deg, $primary 0%, $accent 100%);
+$gradient-accent: linear-gradient(135deg, $accent 0%, $secondary 100%);
+$gradient-hero: linear-gradient(135deg, $primary-dark 0%, $accent-dark 50%, $secondary-dark 100%);
+$gradient-overlay: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 100%);
+
+// Effects
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-glow: 0 0 30px rgba(99, 102, 241, 0.3);
+$shadow-glow-pink: 0 0 30px rgba(236, 72, 153, 0.3);
+$shadow-glow-cyan: 0 0 30px rgba(6, 182, 212, 0.3);
+
+// Neon Effects
+$neon-primary: 0 0 10px $primary, 0 0 20px $primary, 0 0 30px $primary;
+$neon-accent: 0 0 10px $accent, 0 0 20px $accent, 0 0 30px $accent;
+$neon-secondary: 0 0 10px $secondary, 0 0 20px $secondary, 0 0 30px $secondary;
+
+// Glass Morphism
+$glass-bg: rgba(255, 255, 255, 0.05);
+$glass-border: rgba(255, 255, 255, 0.1);
+$glass-blur: blur(10px);
+
+// Spacing & Borders
 $navbar-toggler-focus-width: 0px;
-$dark-emphasis : #141414,
+$border-radius-sm: 0.5rem;
+$border-radius-md: 0.75rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 1.5rem;

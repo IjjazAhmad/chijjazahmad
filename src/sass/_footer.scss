@@ -1,37 +1,170 @@
 .footer {
+    background: linear-gradient(180deg, $dark-alt 0%, $dark-emphasis 100%);
+    padding: 3rem 0 2rem;
+    border-top: 1px solid rgba(99, 102, 241, 0.2);
+    position: relative;
+    overflow: hidden;
+
+    // Decorative gradient background
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: $gradient-primary;
+      animation: shimmer-wave 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer-wave {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
     .ico {
-        gap: 15px;
+        gap: 1rem;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
+        margin-bottom: 1.5rem;
         
         a {
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
-            color: #fff !important;
+            color: $gray-light !important;
             text-decoration: none !important;
-            padding: 7px 8px;
-            border: 2px solid $warning;
-            border-radius: 999px !important;
-            transition: color 0.3s !important;
+            padding: 0;
+            width: 48px;
+            height: 48px;
+            background: $glass-bg;
+            backdrop-filter: $glass-blur;
+            border: 1px solid $glass-border;
+            border-radius: 50% !important;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) scale(0);
+              width: 100%;
+              height: 100%;
+              background: $gradient-primary;
+              border-radius: 50%;
+              transition: transform 0.4s ease;
+              z-index: 0;
+            }
 
             i {
-                font-size: 20px;
+                font-size: 1.25rem;
+                position: relative;
+                z-index: 1;
+                transition: all 0.3s ease;
+            }
+
+            &:hover {
+              transform: translateY(-4px);
+              border-color: transparent;
+              box-shadow: $shadow-lg, $shadow-glow;
+
+              &::before {
+                transform: translate(-50%, -50%) scale(1);
+              }
+
+              i {
+                color: $white !important;
+                transform: scale(1.1);
+              }
+            }
+
+            // Individual social colors
+            &:nth-child(1):hover { // GitHub/First social
+              box-shadow: $shadow-lg, 0 0 30px rgba(99, 102, 241, 0.4);
+            }
+            &:nth-child(2):hover { // LinkedIn/Second social
+              box-shadow: $shadow-lg, 0 0 30px rgba(236, 72, 153, 0.4);
+            }
+            &:nth-child(3):hover { // Twitter/Third social
+              box-shadow: $shadow-lg, 0 0 30px rgba(6, 182, 212, 0.4);
             }
         }
+    }
 
-        a:hover {
-            background-color: $warning !important;
+    // Copyright text
+    p {
+      text-align: center;
+      color: $gray;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      
+      span {
+        background: $gradient-primary;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+      }
+    }
+
+    // Newsletter or additional links section
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+
+      a {
+        color: $gray-light;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: $gradient-primary;
+          transition: width 0.3s ease;
         }
+
+        &:hover {
+          color: $white;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
     }
 }
 
 @media only screen and (max-width: 400px) {
     .footer {
         p {
-            font-size: 10px;
+            font-size: 0.75rem;
+            padding: 0 1rem;
         }
 
+        .ico {
+          gap: 0.75rem;
+
+          a {
+            width: 40px;
+            height: 40px;
+
+            i {
+              font-size: 1rem;
+            }
+          }
+        }
     }
 }

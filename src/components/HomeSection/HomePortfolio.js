@@ -1,23 +1,38 @@
 import { projects } from "../../config/projects";
 import ProjectShowCase from "../ProjectShowCase/ProjectShowCase";
 import { Link } from "react-router-dom";
+
 export default function HomePortfolio() {
   return (
-    <div className="container rounded-3 py-3 bg-secondary portfolio">
-      <div className="text-center text-white py-4">
-        <span data-aos="fade-left">Who Am I ?</span>
-        <h3 className="text-warning">Lastest Projects</h3>
-      </div>
-      {projects.slice(0, 3).map((projectGroup, index) => (
-        <div className="row" key={index}>
-          <ProjectShowCase projects={projectGroup} />
+    <section className="portfolio py-5">
+      <div className="container py-5">
+        <div className="row mb-5">
+          <div className="col-12 text-center">
+            <div className="section__label" data-aos="fade-up">
+              &lt; my_work /&gt;
+            </div>
+            <h2 className="section__title" data-aos="fade-up" data-aos-delay="100">
+              Featured Projects
+            </h2>
+            <p className="section__subtitle" data-aos="fade-up" data-aos-delay="200">
+              Showcasing recent work and successful collaborations
+            </p>
+          </div>
         </div>
-      ))}{" "}
-      <div data-aos="fade-left">
-        <Link to="/project" className="text-center text-warning">
-          <p className="text-warning pt-3">See More Projects</p>
-        </Link>
+        
+        {projects.slice(0, 3).map((projectGroup, index) => (
+          <div className="row mb-4" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+            <ProjectShowCase projects={projectGroup} />
+          </div>
+        ))}
+        
+        <div className="text-center mt-5" data-aos="fade-up">
+          <Link to="/project" className="btn__view-all">
+            <span>View All Projects</span>
+            <i className="fa-solid fa-arrow-right"></i>
+          </Link>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
