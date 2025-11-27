@@ -11,10 +11,18 @@ const Contact = () => {
               <div className="hero__label" data-aos="fade-down">
                 &lt; get_in_touch /&gt;
               </div>
-              <h1 className="hero__title" data-aos="fade-up" data-aos-delay="100">
+              <h1
+                className="hero__title"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 Let's Work Together
               </h1>
-              <p className="hero__breadcrumb" data-aos="fade-up" data-aos-delay="200">
+              <p
+                className="hero__breadcrumb"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <span>Home</span>
                 <i className="fa-solid fa-chevron-right"></i>
                 <span className="active">Contact</span>
@@ -42,13 +50,21 @@ const Contact = () => {
                 </div>
                 <div className="contact__widget__content">
                   <h4>Location</h4>
-                  <p>Faisalabad, Punjab<br/>Pakistan</p>
+                  <p>
+                    Faisalabad, Punjab
+                    <br />
+                    Pakistan
+                  </p>
                 </div>
                 <div className="card__corner top-right"></div>
                 <div className="card__corner bottom-left"></div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a
                 href="https://wa.me/923267876344"
                 target="_blank"
@@ -62,16 +78,24 @@ const Contact = () => {
                   </div>
                   <div className="contact__widget__content">
                     <h4>WhatsApp</h4>
-                    <p>+92 326 7876344<br/>Available 24/7</p>
+                    <p>
+                      +92 326 7876344
+                      <br />
+                      Available 24/7
+                    </p>
                   </div>
                   <div className="card__corner top-right"></div>
                   <div className="card__corner bottom-left"></div>
                 </div>
               </a>
             </div>
-            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div
+              className="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <a
-                href="mailto:ijjazahmad@hotmail.com"
+                href="mailto:ijjazahmad705@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact__widget__link"
@@ -83,7 +107,11 @@ const Contact = () => {
                   </div>
                   <div className="contact__widget__content">
                     <h4>Email</h4>
-                    <p>ijjazahmad@hotmail.com<br/>Quick Response</p>
+                    <p>
+                      ijjazahmad705@gmail.com
+                      <br />
+                      Quick Response
+                    </p>
                   </div>
                   <div className="card__corner top-right"></div>
                   <div className="card__corner bottom-left"></div>

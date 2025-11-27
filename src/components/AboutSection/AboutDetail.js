@@ -10,17 +10,21 @@ export default function AboutDetail() {
           <div className="about-image">
             <img
               src={About}
-              alt="About Ijjaz Ahmad - Full Stack Developer"
+              alt="About Ijjaz Ahmad - Software Developer"
               className="img-fluid"
             />
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-7" data-aos="fade-left" data-aos-delay="200">
+        <div
+          className="col-12 col-md-6 col-lg-7"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <div className="about-content">
             <span className="section-label">Who Am I?</span>
             <h3>About Me!</h3>
             <p>
-              I'm Ijjaz Ahmad, a passionate Full Stack Developer with expertise in
+              I'm Ijjaz Ahmad, a passionate Software Developer with expertise in
               both frontend and backend technologies. I specialize in building
               dynamic, scalable, and user-friendly web applications.
             </p>
@@ -30,10 +34,7 @@ export default function AboutDetail() {
               efficient code to deliver high-performance solutions. Let's
               collaborate to bring your ideas to life!
             </p>
-            <button
-              type="button"
-              className="btn"
-            >
+            <button type="button" className="btn">
               <a
                 href="https://wa.me/+923267876344"
                 target="_blank"

@@ -21,7 +21,9 @@ export default function Navbar() {
   return (
     <header role="banner">
       <nav
-        className={`navbar navbar-expand-lg navbar-dark ${scrolled ? 'scrolled' : ''}`}
+        className={`navbar navbar-expand-lg navbar-dark ${
+          scrolled ? "scrolled" : ""
+        }`}
         role="navigation"
         aria-label="Main navigation"
       >
@@ -29,7 +31,7 @@ export default function Navbar() {
           <Link
             to="/"
             className="navbar-brand"
-            aria-label="Ijjaz Ahmad - Full Stack Developer Home"
+            aria-label="Ijjaz Ahmad - Software Developer Home"
           >
             <span className="brand__bracket">&lt;</span>
             <span className="brand__text">IA</span>

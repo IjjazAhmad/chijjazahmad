@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 export default function Hirebtn() {
   return (
     <div className="hirebtn">
-      <a 
-        href="https://www.fiverr.com/ijjazahmad809" 
-        target="_blank" 
+      <a
+        href="https://www.linkedin.com/in/ijjazahmad"
+        target="_blank"
         rel="noopener noreferrer"
         className="btn-hire"
-        aria-label="Hire me on Fiverr"
+        aria-label="Hire me on LinkedIn"
       >
         <span className="hire__icon">
           <i className="fa-solid fa-briefcase"></i>
@@ -17,5 +17,5 @@ export default function Hirebtn() {
         <div className="hire__glow"></div>
       </a>
     </div>
-  )
+  );
 }

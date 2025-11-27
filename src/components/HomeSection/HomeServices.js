@@ -4,14 +4,14 @@ const services = [
   {
     icon: "fa-brands fa-react",
     title: "React / Next.JS",
-    description: "Modern, fast, and interactive SPAs with cutting-edge frameworks and optimized performance",
-    stack: ["React 18", "Next.js", "TypeScript"],
+    description: "Modern, fast, and interactive SAAS with cutting-edge frameworks and optimized performance",
+    stack: ["React", "Next.js", "TypeScript"],
   },
   {
     icon: "fa-solid fa-mobile-screen",
     title: "Mobile Development",
     description: "High-performance native mobile applications for iOS and Android with seamless UX",
-    stack: ["React Native", "Flutter", "Native APIs"],
+    stack: ["React Native", "Native APIs"],
   },
   {
     icon: "fa-solid fa-database",
