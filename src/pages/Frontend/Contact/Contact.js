@@ -1,5 +1,3 @@
-import ContactForm from "../../../components/Form/ContactForm";
-
 const Contact = () => {
   return (
     <div className="contact__page">
@@ -36,9 +34,6 @@ const Contact = () => {
           </div>
         </div>
         <div className="hero__bg__grid"></div>
-<<<<<<< HEAD
-      </div>     
-=======
       </div>
 
       {/* Contact Info Cards */}
@@ -124,10 +119,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
->>>>>>> e5dbc97d7c2190f8269e9171e47d46d251c95c6e
-
-      {/* Contact Form */}
-      <ContactForm />
     </div>
   );
 };

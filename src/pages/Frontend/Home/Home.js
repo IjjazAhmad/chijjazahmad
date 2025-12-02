@@ -3,7 +3,6 @@ import Hero from "../../../components/HomeSection/HomeHero";
 import About from "../../../components/HomeSection/HomeAbout";
 import Services from "../../../components/HomeSection/HomeServices";
 import Portfolio from "../../../components/HomeSection/HomePortfolio";
-import Contactform from "../../../components/Form/ContactForm";
 import SEOHead from "../../../components/SEO/SEOHead";
 
 export default function Home() {
@@ -76,7 +75,6 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
-        <Contactform />
     </>
   );
 }
