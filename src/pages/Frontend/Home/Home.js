@@ -11,9 +11,9 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Ijjaz Ahmad",
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Software Developer",
     description:
-      "Professional Full Stack Developer specializing in MERN Stack, React.js, Next.js, Node.js, and mobile app development",
+      "Professional Software Developer specializing in MERN Stack, React.js, Next.js, Node.js, and mobile app development",
     url: "https://chijjazahmad.vercel.app",
     sameAs: [
       "https://www.linkedin.com/in/ijjazahmad",
@@ -27,7 +27,7 @@ export default function Home() {
       addressRegion: "Punjab",
       addressCountry: "Pakistan",
     },
-    email: "ijjazahmad@hotmail.com",
+    email: "ijjazahmad705@gmail.com",
     telephone: "+923267876344",
     knowsAbout: [
       "React.js",
@@ -45,7 +45,7 @@ export default function Home() {
     },
     hasOccupation: {
       "@type": "Occupation",
-      name: "Full Stack Developer",
+      name: "Software Developer",
       occupationLocation: {
         "@type": "City",
         name: "Faisalabad, Pakistan",
@@ -66,9 +66,9 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="Ijjaz Ahmad - Full Stack Developer | MERN Stack Expert | Available for Hire"
-        description="Professional Full Stack Developer from Faisalabad, Pakistan. Specializing in MERN Stack, React.js, Next.js, Node.js, and mobile app development. 5+ years experience building scalable web applications. Available for freelance projects and full-time opportunities."
-        keywords="Ijjaz Ahmad, Full Stack Developer, MERN Stack Developer, React.js Expert, Next.js Developer, Node.js Developer, Mobile App Developer, Web Developer, JavaScript Developer, TypeScript, Faisalabad Developer, Pakistan Developer, Freelance Developer, Hire Developer"
+        title="Ijjaz Ahmad - Software Developer | MERN Stack Expert | Available for Hire"
+        description="Professional Software Developer from Faisalabad, Pakistan. Specializing in MERN Stack, React.js, Next.js, Node.js, and mobile app development. 3+ years experience building scalable web applications. Available for freelance projects and full-time opportunities."
+        keywords="Ijjaz Ahmad, Software Developer, MERN Stack Developer, React.js Expert, Next.js Developer, Node.js Developer, Mobile App Developer, Web Developer, JavaScript Developer, TypeScript, Faisalabad Developer, Pakistan Developer, Freelance Developer, Hire Developer"
         canonical="/"
         schemaData={homeSchemaData}
       />

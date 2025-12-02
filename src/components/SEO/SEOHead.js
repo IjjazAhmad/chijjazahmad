@@ -2,9 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const SEOHead = ({
-  title = "Ijjaz Ahmad - Full Stack Developer | MERN Stack Expert | Available for Hire",
-  description = "Professional Full Stack Developer specializing in MERN Stack, React.js, Next.js, Node.js, and mobile app development. 5+ years experience building scalable web applications. Available for freelance projects.",
-  keywords = "Full Stack Developer, MERN Stack, React Developer, Next.js, Node.js, Mobile App Development, Web Development, JavaScript, TypeScript, Pakistan Developer, Freelancer, Faisalabad",
+  title = "Ijjaz Ahmad - Software Developer | MERN Stack Expert | Available for Hire",
+  description = "Professional Software Developer specializing in MERN Stack, React.js, Next.js, Node.js, and mobile app development. 3+ years experience building scalable web applications. Available for freelance projects.",
+  keywords = "Software Developer, MERN Stack, React Developer, Next.js, Node.js, Mobile App Development, Web Development, JavaScript, TypeScript, Pakistan Developer, Freelancer, Faisalabad",
   canonical = "",
   ogImage = "/og-image.jpg",
   ogType = "website",

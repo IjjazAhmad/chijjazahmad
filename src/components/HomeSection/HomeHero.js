@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const myPic = "/images/myPic.jpg";
@@ -25,11 +26,11 @@ export default function HomeHero() {
                 <span className="fw-bold">
                   <Typewriter
                     words={[
-                      "MERN Stack Developer",
+                      "Software Developer",
+                      "MERN Stack",
                       "React.js Expert",
                       "Next.js Specialist",
-                      "Mobile App Developer",
-                      "Full Stack Engineer",
+                      "Native Mobile App Developer",
                     ]}
                     loop={1000}
                     cursor
@@ -41,14 +42,18 @@ export default function HomeHero() {
                 </span>
               </h2>
               <p className="mt-3">
-                Professional Full Stack Developer with 5+ years of experience
+                Professional Software Developer with 3+ years of experience
                 building scalable web applications and mobile apps. Specializing
                 in MERN Stack, React.js, Next.js, and modern JavaScript
                 technologies.
               </p>
               <div className="cta-buttons">
-                <button className="btn btn-primary">View Projects</button>
-                <button className="btn btn-secondary">Contact Me</button>
+                <Link to="/project" className="btn btn-primary">
+                  View Projects
+                </Link>
+                <Link to="/contact" className="btn btn-secondary">
+                  Contact Me
+                </Link>
               </div>
             </div>
           </div>
@@ -58,8 +63,8 @@ export default function HomeHero() {
                 <div className="image">
                   <img
                     src={myPic}
-                    alt="Ijjaz Ahmad - Full Stack Developer Professional Photo"
-                    aria-label="Professional headshot of Ijjaz Ahmad, Full Stack Developer"
+                    alt="Ijjaz Ahmad - Software Developer Professional Photo"
+                    aria-label="Professional headshot of Ijjaz Ahmad, Software Developer"
                     loading="eager"
                     width="320"
                     height="320"
