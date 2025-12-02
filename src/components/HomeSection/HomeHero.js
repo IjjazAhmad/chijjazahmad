@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-const myPic = "/images/myPic.png";
+const myPic = "/images/myPic.jpg";
 
 export default function HomeHero() {
   return (

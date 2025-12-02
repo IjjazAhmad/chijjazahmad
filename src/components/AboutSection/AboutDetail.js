@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = "/images/about.png";
+const About = "/images/about.jpg";
 
 export default function AboutDetail() {
   return (

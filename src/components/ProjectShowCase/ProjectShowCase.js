@@ -12,10 +12,7 @@ function ProjectShowCase(props) {
             <div className="col-lg-6">
               <div className="showcase__image">
                 <div className="image__wrapper">
-                  <img
-                    src={selectedProject.img}
-                    alt={selectedProject.title}
-                  />
+                  <img src={selectedProject.img} alt={selectedProject.title} />
                   <div className="image__overlay"></div>
                   <div className="image__corners">
                     <span className="corner top-left"></span>
@@ -25,17 +22,7 @@ function ProjectShowCase(props) {
                   </div>
                 </div>
               </div>
-            </div>
-            
-            <div className="col-lg-6">
-              <div className="showcase__details">
-                <div className="project__category">
-                  <i className="fa-solid fa-tag"></i>
-                  {selectedProject.category}
-                </div>
-                <h3 className="project__title">{selectedProject.title}</h3>
-                <p className="project__description">{selectedProject.description}</p>
-                
+              <div className="showcase__details mt-3">
                 <div className="project__thumbnails">
                   {projects.map((project, idx) => (
                     <div
@@ -50,6 +37,31 @@ function ProjectShowCase(props) {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="showcase__details">
+                <div className="project__category">
+                  <i className="fa-solid fa-tag"></i>
+                  {selectedProject.category}
+                </div>
+                <h3 className="project__title">{selectedProject.title}</h3>
+                <p className="project__description">
+                  {selectedProject.description}
+                </p>
+
+                {selectedProject.link && (
+                  <a
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project__link-btn"
+                  >
+                    <i className="fa-solid fa-external-link"></i>
+                    Visit Website
+                  </a>
+                )}
               </div>
             </div>
           </div>

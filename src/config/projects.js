@@ -4,15 +4,28 @@ const battingKing2 = "/images/Projects/Batting-King/cover-2.svg";
 const battingKing3 = "/images/Projects/Batting-King/cover-3.svg";
 const battingKing4 = "/images/Projects/Batting-King/cover-4.svg";
 const battingKing5 = "/images/Projects/Batting-King/cover-5.svg";
-const homeWorkRabbitAI = "/images/Projects/Home-Work-Rabbit/cover-1.svg";
-const homeWorkRabbitAI2 = "/images/Projects/Home-Work-Rabbit/cover-2.svg";
+const homeWorkRabbitAI = "/images/Projects/Home-Work-Rabbit/cover-1.png";
+const homeWorkRabbitAI2 = "/images/Projects/Home-Work-Rabbit/cover-2.png";
+const homeWorkRabbitAI3 = "/images/Projects/Home-Work-Rabbit/cover-3.png";
+const rafiqApp1 = "/images/Projects/Rafiq App/cover-1.png";
+const rafiqApp2 = "/images/Projects/Rafiq App/cover-2.png";
+const rafiqApp3 = "/images/Projects/Rafiq App/cover-3.png";
+const coverLap1 = "/images/Projects/CoverLap/cover-1.png";
+const coverLap2 = "/images/Projects/CoverLap/cover-2.png";
+const coverLap3 = "/images/Projects/CoverLap/cover-3.png";
+const freeToolZone1 = "/images/Projects/Free Tool Zone/cover-1.png";
+const freeToolZone2 = "/images/Projects/Free Tool Zone/cover-2.png";
+const freeToolZone3 = "/images/Projects/Free Tool Zone/cover-3.png";
+const travelacco1 = "/images/Projects/Travelacco/cover-1.png";
+const travelacco2 = "/images/Projects/Travelacco/cover-2.png";
+const travelacco3 = "/images/Projects/Travelacco/cover-3.png";
+const kycpal1 = "/images/Projects/KYCPAL/cover-1.png";
+const kycpal2 = "/images/Projects/KYCPAL/cover-2.png";
+const kycpal3 = "/images/Projects/KYCPAL/cover-3.png";
 const watcherAd1 = "/images/Projects/Watcher-Admin/cover-1.svg";
 const watcherAd2 = "/images/Projects/Watcher-Admin/cover-2.svg";
 const watcherAd3 = "/images/Projects/Watcher-Admin/cover-3.svg";
-const nutralaCosmetics = "/images/Projects/Naturla-Cosmetics/cover.svg";
-const kalbosoft = "/images/Projects/Kalbosoft/cover.svg";
 const orderUK = "/images/Projects/Order.Uk/cover.svg";
-const bikeShopping = "/images/Projects/Online Bike Shopping App/cover.svg";
 const rafiq_1 = "/images/Projects/Rafiq-Dashboard/cover.svg";
 const rafiq_2 = "/images/Projects/Rafiq-Dashboard/cover-2.svg";
 const rafiq_3 = "/images/Projects/Rafiq-Dashboard/cover-3.svg";
@@ -30,13 +43,153 @@ export const projects = [
         "I developed this comprehensive AI-powered academic assistance platform using Next.js and modern web technologies. It's a full-stack educational application that provides intelligent tutoring, homework help, assignment solutions, and personalized learning experiences for students across various subjects.",
       img: homeWorkRabbitAI,
       category: "Educational Platform",
+      link: "https://homeworkrabbit.com"
     },
     {
       title: "HomeworkRabbit - Interactive Learning Dashboard",
       description:
-        "Advanced student dashboard featuring AI-driven homework assistance, real-time progress tracking, subject-specific tutoring modules, and collaborative study tools. Built with responsive design to support seamless learning across desktop and mobile devices.",
+      "Advanced student dashboard featuring AI-driven homework assistance, real-time progress tracking, subject-specific tutoring modules, and collaborative study tools. Built with responsive design to support seamless learning across desktop and mobile devices.",
       img: homeWorkRabbitAI2,
       category: "Educational Platform",
+      link: "https://homeworkrabbit.com"
+    },
+    {
+      title: "HomeworkRabbit - AI Tutoring System",
+      description:
+        "Intelligent AI tutoring interface with natural language processing, step-by-step problem solving guidance, personalized learning paths, and adaptive difficulty levels. Provides students with 24/7 academic support across mathematics, science, and language subjects.",
+      img: homeWorkRabbitAI3,
+      category: "Educational Platform",
+      link: "https://homeworkrabbit.com"
+    }
+  ],
+  [
+    {
+      title: "Rafiq App - Islamic Mobile Application",
+      description:
+        "I developed this comprehensive Islamic mobile application using React Native and modern mobile technologies. It's a full-featured app providing prayer times, Quran recitation, mosque finder, Islamic calendar, and community features for Muslims worldwide. Available on Google Play Store.",
+      img: rafiqApp1,
+      category: "Mobile Application",
+      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1"
+    },
+    {
+      title: "Rafiq App - Prayer & Quran Features",
+      description:
+        "Advanced Islamic companion featuring accurate prayer time notifications, full Quran with translations, audio recitations, Qibla direction finder, and daily Islamic reminders. Built with offline support for seamless spiritual practice.",
+      img: rafiqApp2,
+      category: "Mobile Application",
+      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1"
+    },
+    {
+      title: "Rafiq App - Community & Resources",
+      description:
+        "Comprehensive Islamic knowledge platform with mosque locator, Islamic event calendar, hadith collections, dua compilations, and community engagement features. Designed to support Muslims in their daily spiritual journey.",
+      img: rafiqApp3,
+      category: "Mobile Application",
+      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1"
+    },
+  ],
+  [
+    {
+      title: "CoverLap - AI Cover Letter Generator",
+      description:
+        "I developed this innovative AI-powered cover letter generation platform using Next.js and modern web technologies. It's a full-stack application featuring intelligent letter writing, customizable templates, industry-specific content, ATS optimization, and real-time editing for professional job applications.",
+      img: coverLap1,
+      category: "Career Platform",
+      link: "https://coverclap.com"
+    },
+    {
+      title: "CoverLap - Smart Template Builder",
+      description:
+        "Advanced template customization system with AI-powered content suggestions, professional formatting, keyword optimization, and multiple export formats. Built to help job seekers create compelling cover letters that stand out to recruiters.",
+      img: coverLap2,
+      category: "Career Platform",
+      link: "https://coverclap.com"
+    },
+    {
+      title: "CoverLap - Career Success Dashboard",
+      description:
+        "Comprehensive job application tracking platform featuring application management, interview scheduling, cover letter history, success analytics, and career resources. Designed to streamline the job search process and increase application success rates.",
+      img: coverLap3,
+      category: "Career Platform",
+      link: "https://coverclap.com"
+    },
+  ],
+  [
+    {
+      title: "Free Tool Zone - All-in-One Utility Platform",
+      description:
+        "I developed this comprehensive free online tools platform using Next.js and modern web technologies. It's a full-stack application featuring text tools, image converters, calculators, code formatters, and productivity utilities. Designed to provide essential tools for developers, students, and professionals.",
+      img: freeToolZone1,
+      category: "Web Tools Platform",
+      link: "https://freetoolzone.com"
+    },
+    {
+      title: "Free Tool Zone - Developer & Text Tools",
+      description:
+        "Advanced developer toolkit with JSON formatter, base64 encoder/decoder, regex tester, code beautifier, and text manipulation tools. Built with modern UI for seamless tool usage and instant results without registration.",
+      img: freeToolZone2,
+      category: "Web Tools Platform",
+      link: "https://freetoolzone.com"
+    },
+    {
+      title: "Free Tool Zone - Productivity & Converters",
+      description:
+        "Comprehensive utility collection featuring image converters, unit calculators, password generators, color pickers, and file conversion tools. Provides fast, secure, and privacy-focused online tools accessible from any device.",
+      img: freeToolZone3,
+      category: "Web Tools Platform",
+      link: "https://freetoolzone.com"
+    },
+  ],
+  [
+    {
+      title: "Travelacco - Travel Booking Platform",
+      description:
+        "I developed this comprehensive travel booking platform using Next.js and modern web technologies. It's a full-stack application featuring flight bookings, hotel reservations, tour packages, travel itinerary planning, and secure payment processing for seamless travel experiences.",
+      img: travelacco1,
+      category: "Travel & Booking",
+      link: "https://traveloacco-frontend.vercel.app"
+    },
+    {
+      title: "Travelacco - Destination Explorer",
+      description:
+        "Advanced travel discovery platform with destination guides, attraction recommendations, user reviews, interactive maps, and personalized travel suggestions. Built with responsive design to help travelers plan their perfect journey.",
+      img: travelacco2,
+      category: "Travel & Booking",
+      link: "https://traveloacco-frontend.vercel.app"
+    },
+    {
+      title: "Travelacco - Booking Management Dashboard",
+      description:
+        "Comprehensive travel management system featuring booking history, itinerary organization, price alerts, trip reminders, and customer support integration. Designed to streamline travel planning and booking management for modern travelers.",
+      img: travelacco3,
+      category: "Travel & Booking",
+      link: "https://traveloacco-frontend.vercel.app"
+    },
+  ],
+  [
+    {
+      title: "KYCPAL - KYC Verification Platform",
+      description:
+        "I developed this comprehensive KYC (Know Your Customer) verification platform using modern web technologies. It's a full-stack application featuring identity verification, document authentication, compliance management, automated risk assessment, and secure data handling for streamlined customer onboarding processes.",
+      img: kycpal1,
+      category: "Fintech Platform",
+      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5"
+    },
+    {
+      title: "KYCPAL - Document Verification System",
+      description:
+        "Advanced document verification interface with AI-powered identity validation, OCR technology, biometric authentication, and real-time compliance checks. Built with secure encryption to ensure data privacy and regulatory compliance for financial institutions.",
+      img: kycpal2,
+      category: "Fintech Platform",
+      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5"
+    },
+    {
+      title: "KYCPAL - Compliance Dashboard",
+      description:
+        "Comprehensive compliance management system featuring automated verification workflows, audit trails, risk scoring, reporting tools, and multi-jurisdiction support. Designed to streamline KYC processes while maintaining highest security standards.",
+      img: kycpal3,
+      category: "Fintech Platform",
+      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5"
     },
   ],
   [
@@ -83,15 +236,6 @@ export const projects = [
         "I developed this food delivery platform using Next.js and Tailwind CSS. It's a full-stack application featuring order management, restaurant search, payment processing, and delivery tracking for online food ordering experience.",
       img: orderUK,
       category: "Food Website",
-    },
-  ],
-  [
-    {
-      title: "Bike Shopping App",
-      description:
-        "I developed this comprehensive bike shopping application using React.js and modern web technologies. It's a full-stack e-commerce platform featuring product listings, advanced search filters, secure payment processing, customer reviews, and order management for a seamless online shopping experience.",
-      img: bikeShopping,
-      category: "E-commerce Website",
     },
   ],
   [
@@ -156,15 +300,6 @@ export const projects = [
   ],
   [
     {
-      title: "Kalbosoft - Agency Website",
-      description:
-        "I developed this professional agency website for Kalbosoft using Next.js and Tailwind CSS. It's a full-stack application featuring company portfolio showcase, service listings, client testimonials, contact management, and content management system for digital agency operations.",
-      img: kalbosoft,
-      category: "Agency Website",
-    },
-  ],
-  [
-    {
       title: "Estatein - Real Estate Platform",
       description:
         "I developed this comprehensive real estate platform using React.js and modern web technologies. It's a full-stack application featuring property listings, advanced search filters, virtual tours, mortgage calculators, and agent management for professional real estate services.",
@@ -177,15 +312,6 @@ export const projects = [
         "Advanced property management interface with listing management, client relationship tools, market analytics, lead tracking, and automated valuation models. Built with responsive design to support real estate professionals in managing their business operations.",
       img: Estatein_2,
       category: "Real Estate",
-    },
-  ],
-  [
-    {
-      title: "Natural Cosmetics - E-commerce Platform",
-      description:
-        "I developed this comprehensive natural cosmetics e-commerce platform using Next.js and Tailwind CSS. It's a full-stack application featuring product catalog management, secure payment processing, customer reviews, ingredient transparency, and subscription-based delivery for organic beauty products.",
-      img: nutralaCosmetics,
-      category: "E-commerce Website",
     },
   ],
   [

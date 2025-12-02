@@ -20,7 +20,7 @@ export default function HomePortfolio() {
           </div>
         </div>
         
-        {projects.slice(0, 3).map((projectGroup, index) => (
+        {projects.slice(0, 2).map((projectGroup, index) => (
           <div className="row mb-4" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
             <ProjectShowCase projects={projectGroup} />
           </div>

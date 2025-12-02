@@ -76,9 +76,7 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
-      <div className="container">
         <Contactform />
-      </div>
     </>
   );
 }

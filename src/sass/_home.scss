@@ -1,3 +1,50 @@
+.project__link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2rem;
+  background: $gradient-primary;
+  color: $white;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+  }
+
+  i {
+    font-size: 0.875rem;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6), 0 0 15px rgba(236, 72, 153, 0.3);
+    
+    &::before {
+      left: 100%;
+    }
+
+    i {
+      transform: translateX(3px);
+    }
+  }
+}
 // Hero Section
 .home {
   padding-top: 100px !important;
@@ -93,7 +140,7 @@
         position: absolute;
         inset: 0;
         background: linear-gradient(135deg, $primary, $accent, $secondary, $primary);
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        border-radius: 50%;
         animation: pulse-hex 3s ease-in-out infinite;
         opacity: 0.8;
         z-index: 1;
@@ -116,7 +163,7 @@
       img {
         width: 100%;
         height: 100%;
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        border-radius: 50%;
         object-fit: cover;
         object-position: center;
         filter: contrast(1.15) brightness(1.1) saturate(1.15);
@@ -131,7 +178,7 @@
       width: calc(100% - 6px);
       height: calc(100% - 6px);
       background: linear-gradient(135deg, $dark 0%, $dark-alt 50%, $dark 100%);
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      border-radius: 50%;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 0 30px rgba(99, 102, 241, 0.1);
       z-index: 2;
     }
@@ -303,35 +350,65 @@
     font-size: 0.875rem;
     font-weight: 700;
     padding: 1rem 2.5rem;
-    background: transparent;
+    background: rgba(99, 102, 241, 0.1);
     color: $white;
-    border: 2px solid;
-    border-image: $gradient-primary 1;
-    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
-    text-decoration: none;
-    transition: all 0.3s;
+    border: 2px solid transparent;
+    background-clip: padding-box;
     position: relative;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
 
     &::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: $gradient-primary;
+      z-index: -2;
+      clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
+    }
+
+    &::after {
       content: '';
       position: absolute;
       inset: 0;
       left: -100%;
       background: $gradient-primary;
-      transition: left 0.4s;
+      transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
       z-index: -1;
+      clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
     }
 
     &:hover {
-      transform: translateY(-2px);
-      box-shadow: $shadow-glow;
-      &::before { left: 0; }
-      i { transform: translateX(5px); }
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4), 0 0 20px rgba(236, 72, 153, 0.3);
+      
+      &::after { left: 0; }
+      
+      i { 
+        transform: translateX(5px) scale(1.1);
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+      }
     }
 
-    i { transition: transform 0.3s; }
+    &:active {
+      transform: translateY(-1px) scale(0.98);
+    }
+
+    i { 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-size: 1rem;
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
   }
 }
 
@@ -476,41 +553,46 @@
     > .row { position: relative; z-index: 1; }
   }
 
-  .showcase__image .image__wrapper {
+  .showcase__image {
     position: relative;
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 0 100%);
-    background: rgba(0, 0, 0, 0.3);
 
-    img {
+    .image__wrapper {
+      position: relative;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
+      height: 350px;
+      overflow: hidden;
+      clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 0 100%);
+      background: rgba(0, 0, 0, 0.3);
 
-    .image__overlay {
-      position: absolute;
-      inset: 0;
-      background: $gradient-primary;
-      opacity: 0;
-      transition: opacity 0.4s;
-      mix-blend-mode: overlay;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .image__overlay {
+        position: absolute;
+        inset: 0;
+        background: $gradient-primary;
+        opacity: 0;
+        transition: opacity 0.4s;
+        mix-blend-mode: overlay;
+      }
     }
 
     .image__corners span {
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       border: 2px solid;
       border-image: $gradient-accent 1;
+      z-index: 2;
 
-      &.top-left { top: 15px; left: 15px; border-right: none; border-bottom: none; }
-      &.top-right { top: 15px; right: 15px; border-left: none; border-bottom: none; }
-      &.bottom-left { bottom: 15px; left: 15px; border-right: none; border-top: none; }
-      &.bottom-right { bottom: 15px; right: 15px; border-left: none; border-top: none; }
+      &.top-left { top: -8px; left: -8px; border-right: none; border-bottom: none; }
+      &.top-right { top: -8px; right: -8px; border-left: none; border-bottom: none; }
+      &.bottom-left { bottom: -8px; left: -8px; border-right: none; border-top: none; }
+      &.bottom-right { bottom: -8px; right: -8px; border-left: none; border-top: none; }
     }
   }
 
@@ -554,6 +636,7 @@
       line-height: 1.7;
       margin-bottom: 2rem;
     }
+
 
     .project__thumbnails {
       display: flex;
