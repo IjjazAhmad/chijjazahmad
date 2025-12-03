@@ -352,9 +352,16 @@
 
     .navbar-nav {
       gap: 0.5rem;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
 
       li {
         margin-left: 0 !important;
+        width: 100%;
+
+        .nav-link {
+          justify-content: flex-start !important;
+        }
       }
     }
   }

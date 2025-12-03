@@ -3,7 +3,6 @@ const battingKing1 = "/images/Projects/Batting-King/cover.svg";
 const battingKing2 = "/images/Projects/Batting-King/cover-2.svg";
 const battingKing3 = "/images/Projects/Batting-King/cover-3.svg";
 const battingKing4 = "/images/Projects/Batting-King/cover-4.svg";
-const battingKing5 = "/images/Projects/Batting-King/cover-5.svg";
 const homeWorkRabbitAI = "/images/Projects/Home-Work-Rabbit/cover-1.png";
 const homeWorkRabbitAI2 = "/images/Projects/Home-Work-Rabbit/cover-2.png";
 const homeWorkRabbitAI3 = "/images/Projects/Home-Work-Rabbit/cover-3.png";
@@ -22,11 +21,16 @@ const travelacco3 = "/images/Projects/Travelacco/cover-3.png";
 const kycpal1 = "/images/Projects/KYCPAL/cover-1.png";
 const kycpal2 = "/images/Projects/KYCPAL/cover-2.png";
 const kycpal3 = "/images/Projects/KYCPAL/cover-3.png";
+const typeOut1 = "/images/Projects/Type Out/cover-1.png";
+const typeOut2 = "/images/Projects/Type Out/cover-2.png";
+const typeOut3 = "/images/Projects/Type Out/cover-3.png";
+const kalbosoft1 = "/images/Projects/Kalbosoft/cover-1.png";
+const kalbosoft2 = "/images/Projects/Kalbosoft/cover-2.png";
+const kalbosoft3 = "/images/Projects/Kalbosoft/cover-3.png";
 const watcherAd1 = "/images/Projects/Watcher-Admin/cover-1.svg";
 const watcherAd2 = "/images/Projects/Watcher-Admin/cover-2.svg";
 const watcherAd3 = "/images/Projects/Watcher-Admin/cover-3.svg";
 const orderUK = "/images/Projects/Order.Uk/cover.svg";
-const rafiq_1 = "/images/Projects/Rafiq-Dashboard/cover.svg";
 const rafiq_2 = "/images/Projects/Rafiq-Dashboard/cover-2.svg";
 const rafiq_3 = "/images/Projects/Rafiq-Dashboard/cover-3.svg";
 const rafiq_4 = "/images/Projects/Rafiq-Dashboard/cover-4.svg";
@@ -194,6 +198,58 @@ export const projects = [
   ],
   [
     {
+      title: "Type Out - Typing Speed Tester",
+      description:
+        "I developed this interactive typing speed testing platform using React.js and modern web technologies. It's a full-stack application featuring real-time WPM tracking, accuracy measurement, multiple difficulty levels, customizable text passages, and performance analytics for improving typing skills.",
+      img: typeOut1,
+      category: "Web Application",
+      link: "https://typing-speed-tester-kappa.vercel.app/"
+    },
+    {
+      title: "Type Out - Practice & Performance",
+      description:
+        "Advanced typing practice interface with customizable time limits, word count modes, mistake highlighting, and detailed statistics tracking. Built with responsive design to provide seamless typing practice experience across all devices.",
+      img: typeOut2,
+      category: "Web Application",
+      link: "https://typing-speed-tester-kappa.vercel.app/"
+    },
+    {
+      title: "Type Out - Analytics Dashboard",
+      description:
+        "Comprehensive typing analytics system featuring WPM history, accuracy trends, personal best records, progress graphs, and performance comparisons. Designed to help users track improvement and achieve typing mastery.",
+      img: typeOut3,
+      category: "Web Application",
+      link: "https://typing-speed-tester-kappa.vercel.app/"
+    },
+  ],
+  [
+    {
+      title: "Kalbosoft - Digital Agency Platform",
+      description:
+        "I developed this professional digital agency website using Next.js and modern web technologies. It's a full-stack platform featuring service showcase, portfolio management, client testimonials, team profiles, and contact management system for comprehensive agency operations.",
+      img: kalbosoft1,
+      category: "Agency Website",
+      link: "https://kalbosoft.com"
+    },
+    {
+      title: "Kalbosoft - Portfolio Showcase",
+      description:
+        "Advanced portfolio presentation system with project galleries, case studies, client success stories, and service offerings. Built with responsive design and modern UI/UX to showcase agency expertise and attract potential clients.",
+      img: kalbosoft2,
+      category: "Agency Website",
+      link: "https://kalbosoft.com"
+    },
+    {
+      title: "Kalbosoft - Client Management",
+      description:
+        "Comprehensive agency management interface featuring client onboarding, project tracking, team collaboration tools, and automated reporting systems. Designed to streamline agency workflows and enhance client communication.",
+      img: kalbosoft3,
+      category: "Agency Website",
+      link: "https://kalbosoft.com"
+    },
+  ],
+  [
+    {
       title: "Batting King - Live Betting Interface",
       description:
         "I built this comprehensive bet gaming platform using React.js and modern CSS frameworks. It's a full-stack betting application featuring real-time odds, user account management, betting history, and secure payment processing for sports betting enthusiasts.",
@@ -220,22 +276,6 @@ export const projects = [
         "Comprehensive analytics dashboard for betting statistics, win/loss tracking, performance metrics, and detailed reporting. Features interactive charts and data visualization to help users analyze their betting patterns and success rates.",
       img: battingKing4,
       category: "Gaming Dashboard",
-    },
-    {
-      title: "Batting King - Dashboard",
-      description:
-        "Comprehensive analytics dashboard for betting statistics, win/loss tracking, performance metrics, and detailed reporting. Features interactive charts and data visualization to help users analyze their betting patterns and success rates.",
-      img: battingKing5,
-      category: "Gaming Dashboard",
-    },
-  ],
-  [
-    {
-      title: "Order.UK - Food Delivery Platform",
-      description:
-        "I developed this food delivery platform using Next.js and Tailwind CSS. It's a full-stack application featuring order management, restaurant search, payment processing, and delivery tracking for online food ordering experience.",
-      img: orderUK,
-      category: "Food Website",
     },
   ],
   [
@@ -266,14 +306,7 @@ export const projects = [
         "Member management system with community engagement features, membership registration, family profiles, volunteer coordination, and communication tools for building stronger mosque community connections.",
       img: rafiq_4,
       category: "Mosque Management",
-    },
-    {
-      title: "Ummaah Dashboard - Events & Education Center",
-      description:
-        "Event planning and educational program management system featuring class scheduling, workshop organization, religious education tracking, and community event coordination for comprehensive mosque program management.",
-      img: rafiq_1,
-      category: "Mosque Management",
-    },
+    }
   ],
   [
     {
@@ -328,6 +361,15 @@ export const projects = [
         "Advanced analytics dashboard with click tracking, geographic data visualization, referrer analysis, and detailed reporting tools. Built with responsive design to provide comprehensive insights into link performance and user engagement metrics.",
       img: URLShortner_2,
       category: "Web Application",
+    },
+  ],
+   [
+    {
+      title: "Order.UK - Food Delivery Platform",
+      description:
+        "I developed this food delivery platform using Next.js and Tailwind CSS. It's a full-stack application featuring order management, restaurant search, payment processing, and delivery tracking for online food ordering experience.",
+      img: orderUK,
+      category: "Food Website",
     },
   ],
 ];

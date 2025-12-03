@@ -4,6 +4,8 @@ import About from "../../../components/HomeSection/HomeAbout";
 import Services from "../../../components/HomeSection/HomeServices";
 import Portfolio from "../../../components/HomeSection/HomePortfolio";
 import SEOHead from "../../../components/SEO/SEOHead";
+import Contact from "../Contact/Contact";
+import ContactForm from "../../../components/Form/ContactForm";
 
 export default function Home() {
   const homeSchemaData = {
@@ -75,6 +77,7 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
+      <ContactForm />
     </>
   );
 }
