@@ -54,10 +54,11 @@ export default function ServicesDetails() {
             <div className="section__label" data-aos="fade-up">
               &lt; expertise /&gt;
             </div>
-            <h3 className="section__title" data-aos="fade-up" data-aos-delay="100">
-              Complete Service Portfolio
-            </h3>
-            <p className="section__subtitle" data-aos="fade-up" data-aos-delay="200">
+            <p
+              className="section__subtitle"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Comprehensive solutions for your digital transformation
             </p>
           </div>
@@ -65,8 +66,8 @@ export default function ServicesDetails() {
 
         <div className="row g-4">
           {services.map((service, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="col-lg-4 col-md-6"
               data-aos="fade-up"
               data-aos-delay={index * 50}
