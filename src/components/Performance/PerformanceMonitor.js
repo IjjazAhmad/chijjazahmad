@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const PerformanceMonitor = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const PerformanceMonitor = () => {
           window.gtag("event", metric.name, {
             event_category: "Web Vitals",
             value: Math.round(
-              metric.name === "CLS" ? metric.value * 1000 : metric.value
+              metric.name === "CLS" ? metric.value * 1000 : metric.value,
             ),
             event_label: metric.id,
             non_interaction: true,

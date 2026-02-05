@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import PorfolioHero from "../../../components/PortfolioSection/PortfolioHero";
 import SEOHead from "../../../components/SEO/SEOHead";
-import SocialShare, {
-  ProjectShare,
-} from "../../../components/SocialShare/SocialShare";
+import SocialShare from "../../../components/SocialShare/SocialShare";
 import { Link } from "react-router-dom";
 import { caseStudies } from "../../../config/caseStudies";
 import CaseStudyCard from "../../../components/Card/CaseStudyCard";

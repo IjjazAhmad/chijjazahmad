@@ -25,8 +25,6 @@ const SocialShare = ({
   className = "",
 }) => {
   const encodedUrl = encodeURIComponent(url);
-  const encodedTitle = encodeURIComponent(title);
-  const encodedDescription = encodeURIComponent(description);
   const fullText = encodeURIComponent(`${title}\n\n${description}`);
 
   const shareLinks = {

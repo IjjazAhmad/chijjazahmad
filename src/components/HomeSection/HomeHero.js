@@ -63,7 +63,7 @@ export default function HomeHero() {
                 <div className="image">
                   <img
                     src={myPic}
-                    alt="Ijjaz Ahmad - Software Developer Professional Photo"
+                    alt="Ijjaz Ahmad - Software Developer"
                     aria-label="Professional headshot of Ijjaz Ahmad, Software Developer"
                     loading="eager"
                     width="320"
