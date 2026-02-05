@@ -42,29 +42,29 @@ const Estatein_2 = "/images/Projects/Estatein/cover-2.svg";
 export const projects = [
   [
     {
-      title: "HomeworkRabbit - AI Study Platform",
+      title: "Homework Rabbit - Fastest AI Homework Helper",
       description:
-        "I developed this comprehensive AI-powered academic assistance platform using Next.js and modern web technologies. It's a full-stack educational application that provides intelligent tutoring, homework help, assignment solutions, and personalized learning experiences for students across various subjects.",
+        "Solo-developed full-stack AI platform delivering instant, step-by-step homework solutions across 15+ subjects (Math, Calculus, Physics, Chemistry, Literature, History, Geography & more). Users input via text, photo upload (OCR), or voice — receiving detailed, expert-verified explanations in ~2.3 seconds. Built with Next.js, NextAuth, and Convex. Stats: 500K+ problems solved, 99% accuracy, 4.9/5 rating with testimonials from Princeton, Stanford, MIT students.",
       img: homeWorkRabbitAI,
-      category: "Educational Platform",
-      link: "https://homeworkrabbit.com"
+      category: "AI Educational Platform",
+      link: "https://www.homeworkrabbit.com",
     },
     {
-      title: "HomeworkRabbit - Interactive Learning Dashboard",
+      title: "Homework Rabbit - Public Playground & Dashboard",
       description:
-      "Advanced student dashboard featuring AI-driven homework assistance, real-time progress tracking, subject-specific tutoring modules, and collaborative study tools. Built with responsive design to support seamless learning across desktop and mobile devices.",
+        "Zero-friction public playground at /playground — visitors can instantly type questions, drag-drop images, or try examples and get full step-by-step AI responses without signing up. Secure authentication (Google + email) leads to personalized dashboard with progress analytics, subject-wise success rates tracking, and adaptive learning recommendations. Freemium model with premium plans for unlimited solves.",
       img: homeWorkRabbitAI2,
-      category: "Educational Platform",
-      link: "https://homeworkrabbit.com"
+      category: "AI Educational Platform",
+      link: "https://www.homeworkrabbit.com/playground",
     },
     {
-      title: "HomeworkRabbit - AI Tutoring System",
+      title: "Homework Rabbit - Full Product Development",
       description:
-        "Intelligent AI tutoring interface with natural language processing, step-by-step problem solving guidance, personalized learning paths, and adaptive difficulty levels. Provides students with 24/7 academic support across mathematics, science, and language subjects.",
+        "End-to-end product development: Homepage with hero upload interface, feature showcase, real-time example solver, and social proof. AI pipeline includes image OCR/recognition, NLP for text/voice, equation solving with contextual explanations. Performance: ~2.3s response time, 99.9% uptime. Mobile-responsive UX with intuitive flow from landing → try → sign-up → dashboard. 500K+ students helped worldwide.",
       img: homeWorkRabbitAI3,
-      category: "Educational Platform",
-      link: "https://homeworkrabbit.com"
-    }
+      category: "AI Educational Platform",
+      link: "https://www.homeworkrabbit.com",
+    },
   ],
   [
     {
@@ -73,7 +73,7 @@ export const projects = [
         "I developed this comprehensive Islamic mobile application using React Native and modern mobile technologies. It's a full-featured app providing prayer times, Quran recitation, mosque finder, Islamic calendar, and community features for Muslims worldwide. Available on Google Play Store.",
       img: rafiqApp1,
       category: "Mobile Application",
-      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1"
+      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1",
     },
     {
       title: "Rafiq App - Prayer & Quran Features",
@@ -81,7 +81,7 @@ export const projects = [
         "Advanced Islamic companion featuring accurate prayer time notifications, full Quran with translations, audio recitations, Qibla direction finder, and daily Islamic reminders. Built with offline support for seamless spiritual practice.",
       img: rafiqApp2,
       category: "Mobile Application",
-      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1"
+      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1",
     },
     {
       title: "Rafiq App - Community & Resources",
@@ -89,7 +89,7 @@ export const projects = [
         "Comprehensive Islamic knowledge platform with mosque locator, Islamic event calendar, hadith collections, dua compilations, and community engagement features. Designed to support Muslims in their daily spiritual journey.",
       img: rafiqApp3,
       category: "Mobile Application",
-      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1"
+      link: "https://play.google.com/store/apps/details?id=com.rafiqapp&hl=en_US&pli=1",
     },
   ],
   [
@@ -99,7 +99,7 @@ export const projects = [
         "I developed this innovative AI-powered cover letter generation platform using Next.js and modern web technologies. It's a full-stack application featuring intelligent letter writing, customizable templates, industry-specific content, ATS optimization, and real-time editing for professional job applications.",
       img: coverLap1,
       category: "Career Platform",
-      link: "https://coverclap.com"
+      link: "https://coverclap.com",
     },
     {
       title: "CoverLap - Smart Template Builder",
@@ -107,7 +107,7 @@ export const projects = [
         "Advanced template customization system with AI-powered content suggestions, professional formatting, keyword optimization, and multiple export formats. Built to help job seekers create compelling cover letters that stand out to recruiters.",
       img: coverLap2,
       category: "Career Platform",
-      link: "https://coverclap.com"
+      link: "https://coverclap.com",
     },
     {
       title: "CoverLap - Career Success Dashboard",
@@ -115,7 +115,7 @@ export const projects = [
         "Comprehensive job application tracking platform featuring application management, interview scheduling, cover letter history, success analytics, and career resources. Designed to streamline the job search process and increase application success rates.",
       img: coverLap3,
       category: "Career Platform",
-      link: "https://coverclap.com"
+      link: "https://coverclap.com",
     },
   ],
   [
@@ -125,7 +125,7 @@ export const projects = [
         "I developed this comprehensive free online tools platform using Next.js and modern web technologies. It's a full-stack application featuring text tools, image converters, calculators, code formatters, and productivity utilities. Designed to provide essential tools for developers, students, and professionals.",
       img: freeToolZone1,
       category: "Web Tools Platform",
-      link: "https://freetoolzone.com"
+      link: "https://freetoolzone.com",
     },
     {
       title: "Free Tool Zone - Developer & Text Tools",
@@ -133,7 +133,7 @@ export const projects = [
         "Advanced developer toolkit with JSON formatter, base64 encoder/decoder, regex tester, code beautifier, and text manipulation tools. Built with modern UI for seamless tool usage and instant results without registration.",
       img: freeToolZone2,
       category: "Web Tools Platform",
-      link: "https://freetoolzone.com"
+      link: "https://freetoolzone.com",
     },
     {
       title: "Free Tool Zone - Productivity & Converters",
@@ -141,7 +141,7 @@ export const projects = [
         "Comprehensive utility collection featuring image converters, unit calculators, password generators, color pickers, and file conversion tools. Provides fast, secure, and privacy-focused online tools accessible from any device.",
       img: freeToolZone3,
       category: "Web Tools Platform",
-      link: "https://freetoolzone.com"
+      link: "https://freetoolzone.com",
     },
   ],
   [
@@ -151,7 +151,7 @@ export const projects = [
         "I developed this comprehensive travel booking platform using Next.js and modern web technologies. It's a full-stack application featuring flight bookings, hotel reservations, tour packages, travel itinerary planning, and secure payment processing for seamless travel experiences.",
       img: travelacco1,
       category: "Travel & Booking",
-      link: "https://traveloacco-frontend.vercel.app"
+      link: "https://traveloacco-frontend.vercel.app",
     },
     {
       title: "Travelacco - Destination Explorer",
@@ -159,7 +159,7 @@ export const projects = [
         "Advanced travel discovery platform with destination guides, attraction recommendations, user reviews, interactive maps, and personalized travel suggestions. Built with responsive design to help travelers plan their perfect journey.",
       img: travelacco2,
       category: "Travel & Booking",
-      link: "https://traveloacco-frontend.vercel.app"
+      link: "https://traveloacco-frontend.vercel.app",
     },
     {
       title: "Travelacco - Booking Management Dashboard",
@@ -167,7 +167,7 @@ export const projects = [
         "Comprehensive travel management system featuring booking history, itinerary organization, price alerts, trip reminders, and customer support integration. Designed to streamline travel planning and booking management for modern travelers.",
       img: travelacco3,
       category: "Travel & Booking",
-      link: "https://traveloacco-frontend.vercel.app"
+      link: "https://traveloacco-frontend.vercel.app",
     },
   ],
   [
@@ -177,7 +177,7 @@ export const projects = [
         "I developed this comprehensive KYC (Know Your Customer) verification platform using modern web technologies. It's a full-stack application featuring identity verification, document authentication, compliance management, automated risk assessment, and secure data handling for streamlined customer onboarding processes.",
       img: kycpal1,
       category: "Fintech Platform",
-      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5"
+      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5",
     },
     {
       title: "KYCPAL - Document Verification System",
@@ -185,7 +185,7 @@ export const projects = [
         "Advanced document verification interface with AI-powered identity validation, OCR technology, biometric authentication, and real-time compliance checks. Built with secure encryption to ensure data privacy and regulatory compliance for financial institutions.",
       img: kycpal2,
       category: "Fintech Platform",
-      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5"
+      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5",
     },
     {
       title: "KYCPAL - Compliance Dashboard",
@@ -193,7 +193,7 @@ export const projects = [
         "Comprehensive compliance management system featuring automated verification workflows, audit trails, risk scoring, reporting tools, and multi-jurisdiction support. Designed to streamline KYC processes while maintaining highest security standards.",
       img: kycpal3,
       category: "Fintech Platform",
-      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5"
+      link: "https://www.loom.com/share/ce31facaca3b4744ae2bcfce861ae3b5",
     },
   ],
   [
@@ -203,7 +203,7 @@ export const projects = [
         "I developed this interactive typing speed testing platform using React.js and modern web technologies. It's a full-stack application featuring real-time WPM tracking, accuracy measurement, multiple difficulty levels, customizable text passages, and performance analytics for improving typing skills.",
       img: typeOut1,
       category: "Web Application",
-      link: "https://typing-speed-tester-kappa.vercel.app/"
+      link: "https://typing-speed-tester-kappa.vercel.app/",
     },
     {
       title: "Type Out - Practice & Performance",
@@ -211,7 +211,7 @@ export const projects = [
         "Advanced typing practice interface with customizable time limits, word count modes, mistake highlighting, and detailed statistics tracking. Built with responsive design to provide seamless typing practice experience across all devices.",
       img: typeOut2,
       category: "Web Application",
-      link: "https://typing-speed-tester-kappa.vercel.app/"
+      link: "https://typing-speed-tester-kappa.vercel.app/",
     },
     {
       title: "Type Out - Analytics Dashboard",
@@ -219,7 +219,7 @@ export const projects = [
         "Comprehensive typing analytics system featuring WPM history, accuracy trends, personal best records, progress graphs, and performance comparisons. Designed to help users track improvement and achieve typing mastery.",
       img: typeOut3,
       category: "Web Application",
-      link: "https://typing-speed-tester-kappa.vercel.app/"
+      link: "https://typing-speed-tester-kappa.vercel.app/",
     },
   ],
   [
@@ -229,7 +229,7 @@ export const projects = [
         "I developed this professional digital agency website using Next.js and modern web technologies. It's a full-stack platform featuring service showcase, portfolio management, client testimonials, team profiles, and contact management system for comprehensive agency operations.",
       img: kalbosoft1,
       category: "Agency Website",
-      link: "https://kalbosoft.com"
+      link: "https://kalbosoft.com",
     },
     {
       title: "Kalbosoft - Portfolio Showcase",
@@ -237,7 +237,7 @@ export const projects = [
         "Advanced portfolio presentation system with project galleries, case studies, client success stories, and service offerings. Built with responsive design and modern UI/UX to showcase agency expertise and attract potential clients.",
       img: kalbosoft2,
       category: "Agency Website",
-      link: "https://kalbosoft.com"
+      link: "https://kalbosoft.com",
     },
     {
       title: "Kalbosoft - Client Management",
@@ -245,7 +245,7 @@ export const projects = [
         "Comprehensive agency management interface featuring client onboarding, project tracking, team collaboration tools, and automated reporting systems. Designed to streamline agency workflows and enhance client communication.",
       img: kalbosoft3,
       category: "Agency Website",
-      link: "https://kalbosoft.com"
+      link: "https://kalbosoft.com",
     },
   ],
   [
@@ -306,7 +306,7 @@ export const projects = [
         "Member management system with community engagement features, membership registration, family profiles, volunteer coordination, and communication tools for building stronger mosque community connections.",
       img: rafiq_4,
       category: "Mosque Management",
-    }
+    },
   ],
   [
     {
@@ -363,7 +363,7 @@ export const projects = [
       category: "Web Application",
     },
   ],
-   [
+  [
     {
       title: "Order.UK - Food Delivery Platform",
       description:

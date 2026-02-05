@@ -14,15 +14,16 @@ function ProjectShowCase(props) {
                 <div className="image__wrapper">
                   <img src={selectedProject.img} alt={selectedProject.title} />
                   <div className="image__overlay"></div>
-                  <div className="image__corners">
-                    <span className="corner top-left"></span>
-                    <span className="corner top-right"></span>
-                    <span className="corner bottom-left"></span>
-                    <span className="corner bottom-right"></span>
-                  </div>
+                  <div className="image__glow"></div>
+                </div>
+                <div className="image__frame">
+                  <span className="frame-line top"></span>
+                  <span className="frame-line right"></span>
+                  <span className="frame-line bottom"></span>
+                  <span className="frame-line left"></span>
                 </div>
               </div>
-              <div className="showcase__details mt-3">
+              <div className="showcase__thumbnails mt-4">
                 <div className="project__thumbnails">
                   {projects.map((project, idx) => (
                     <div
@@ -34,6 +35,7 @@ function ProjectShowCase(props) {
                     >
                       <img src={project.img} alt={project.title} />
                       <div className="thumbnail__overlay"></div>
+                      <div className="thumbnail__border"></div>
                     </div>
                   ))}
                 </div>
@@ -41,30 +43,48 @@ function ProjectShowCase(props) {
             </div>
 
             <div className="col-lg-6">
-              <div className="showcase__details">
-                <div className="project__category">
-                  <i className="fa-solid fa-tag"></i>
-                  {selectedProject.category}
+              <div className="showcase__info">
+                <div className="project__badge">
+                  <span className="badge__icon">
+                    <i className="fa-solid fa-rocket"></i>
+                  </span>
+                  <span className="badge__text">
+                    {selectedProject.category}
+                  </span>
                 </div>
-                <h3 className="project__title">{selectedProject.title}</h3>
-                <p className="project__description">
-                  {selectedProject.description}
-                </p>
 
-                {selectedProject.link && (
-                  <a
-                    href={selectedProject.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project__link-btn"
-                  >
-                    <i className="fa-solid fa-external-link"></i>
-                    Visit Website
-                  </a>
-                )}
+                <h3 className="project__title">
+                  <span className="title__text">{selectedProject.title}</span>
+                  <span className="title__underline"></span>
+                </h3>
+
+                <div className="project__description">
+                  <p>{selectedProject.description}</p>
+                </div>
+
+                <div className="project__actions">
+                  {selectedProject.link && (
+                    <a
+                      href={selectedProject.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project__link-btn primary"
+                    >
+                      <span className="btn__content">
+                        <i className="fa-solid fa-external-link"></i>
+                        <span>Visit Website</span>
+                      </span>
+                      <span className="btn__glow"></span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="showcase__decoration">
+          <div className="deco-circle"></div>
+          <div className="deco-dots"></div>
         </div>
       </div>
     </div>

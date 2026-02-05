@@ -1,13 +1,62 @@
-# https://www.robotstxt.org/robotstxt.html
+# Robots.txt for https://chijjazahmad.vercel.app
+# Professional Portfolio of Ijjaz Ahmad - MERN Stack Developer
+
+# Allow all search engine crawlers
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /*.json$
 Disallow: /admin/
 Disallow: /private/
-Disallow: *.json$
-Disallow: /api/
 
-# Sitemap
+# Google Bot - Full Access
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /og-image.jpg
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yahoo Slurp
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo Bot
+User-agent: DuckDuckBot
+Allow: /
+
+# Facebook Crawler
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter Bot
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn Bot
+User-agent: LinkedInBot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap Location
 Sitemap: https://chijjazahmad.vercel.app/sitemap.xml
 
-# Crawl-delay
-Crawl-delay: 1
+# Host
+Host: https://chijjazahmad.vercel.app

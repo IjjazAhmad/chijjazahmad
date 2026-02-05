@@ -4,20 +4,44 @@ const services = [
   {
     icon: "fa-brands fa-react",
     title: "React / Next.JS",
-    description: "Modern, fast, and interactive SAAS with cutting-edge frameworks and optimized performance",
+    description:
+      "Modern, fast, and interactive SAAS with cutting-edge frameworks and optimized performance",
     stack: ["React", "Next.js", "TypeScript"],
   },
   {
     icon: "fa-solid fa-mobile-screen",
     title: "Mobile Development",
-    description: "High-performance native mobile applications for iOS and Android with seamless UX",
+    description:
+      "High-performance native mobile applications for iOS and Android with seamless UX",
     stack: ["React Native", "Native APIs"],
   },
   {
     icon: "fa-solid fa-database",
     title: "Full Stack (MERN)",
-    description: "Complete web solutions from database architecture to polished user interfaces",
+    description:
+      "Complete web solutions from database architecture to polished user interfaces",
     stack: ["MongoDB", "Express", "Node.js"],
+  },
+  {
+    icon: "fa-solid fa-robot",
+    title: "AI Integration",
+    description:
+      "Integrate powerful AI capabilities into your applications with leading AI APIs and models",
+    stack: ["OpenAI", "Claude", "Gemini", "Grok"],
+  },
+  {
+    icon: "fa-solid fa-cloud-arrow-up",
+    title: "Deployment & DevOps",
+    description:
+      "Seamless deployment pipelines with CI/CD, containerization, and cloud infrastructure",
+    stack: ["AWS", "Vercel", "Docker", "GitHub Actions"],
+  },
+  {
+    icon: "fa-solid fa-rocket",
+    title: "End-to-End SaaS",
+    description:
+      "Complete SaaS solutions with authentication, payments, subscriptions, and scalable architecture",
+    stack: ["Stripe", "Auth0", "PostgreSQL", "Redis"],
   },
 ];
 
@@ -31,15 +55,19 @@ function HomeServices() {
               <div className="section__label" data-aos="fade-up">
                 &lt; what_i_do /&gt;
               </div>
-              <h2 
+              <h2
                 id="services-heading"
-                className="section__title" 
-                data-aos="fade-up" 
+                className="section__title"
+                data-aos="fade-up"
                 data-aos-delay="100"
               >
                 Services & Expertise
               </h2>
-              <p className="section__subtitle" data-aos="fade-up" data-aos-delay="200">
+              <p
+                className="section__subtitle"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 Building digital experiences with modern technologies
               </p>
             </div>
@@ -63,7 +91,9 @@ function HomeServices() {
                   <p>{service.description}</p>
                   <div className="services__stack">
                     {service.stack.map((tech, idx) => (
-                      <span key={idx} className="stack__tag">{tech}</span>
+                      <span key={idx} className="stack__tag">
+                        {tech}
+                      </span>
                     ))}
                   </div>
                 </article>

@@ -1,33 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://chijjazahmad.vercel.app/</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
     <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://chijjazahmad.vercel.app/images/myPic.jpg</image:loc>
+      <image:title>Ijjaz Ahmad - MERN Stack Developer Faisalabad</image:title>
+      <image:caption>Professional MERN Stack Developer from Faisalabad, Pakistan with 3+ years experience</image:caption>
+    </image:image>
   </url>
+  
+  <!-- About Page -->
   <url>
     <loc>https://chijjazahmad.vercel.app/about</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <priority>0.90</priority>
     <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://chijjazahmad.vercel.app/images/about.jpg</image:loc>
+      <image:title>About Ijjaz Ahmad - Full Stack Developer Bio</image:title>
+    </image:image>
   </url>
+  
+  <!-- Services Page -->
   <url>
     <loc>https://chijjazahmad.vercel.app/service</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
+  
+  <!-- Projects Page -->
   <url>
     <loc>https://chijjazahmad.vercel.app/project</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <priority>0.90</priority>
     <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://chijjazahmad.vercel.app/images/Projects/Home-Work-Rabbit/cover-1.png</image:loc>
+      <image:title>Homework Rabbit - Fastest AI Homework Helper</image:title>
+      <image:caption>AI-powered homework helper delivering instant solutions across 15+ subjects. Built with Next.js, NextAuth, and Convex. 500K+ problems solved.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://chijjazahmad.vercel.app/images/Projects/Rafiq%20App/cover-1.png</image:loc>
+      <image:title>Rafiq Islamic Mobile App</image:title>
+      <image:caption>React Native Islamic app available on Google Play Store</image:caption>
+    </image:image>
   </url>
+  
+  <!-- Contact Page -->
   <url>
     <loc>https://chijjazahmad.vercel.app/contact</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
-    <priority>0.70</priority>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
+  
+  <!-- Blog Main Page -->
+  <url>
+    <loc>https://chijjazahmad.vercel.app/blog</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://chijjazahmad.vercel.app/blog/how-to-build-ai-apps-with-nextjs</loc>
+    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://chijjazahmad.vercel.app/blog/react-native-tips-for-mobile-development</loc>
+    <lastmod>2026-01-12T00:00:00+00:00</lastmod>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://chijjazahmad.vercel.app/blog/complete-guide-mern-stack-2026</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
 </urlset>

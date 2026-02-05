@@ -12,6 +12,9 @@ export default function AboutDetail() {
               src={About}
               alt="About Ijjaz Ahmad - Software Developer"
               className="img-fluid"
+              loading="lazy"
+              width="600"
+              height="600"
             />
           </div>
         </div>
@@ -22,19 +25,22 @@ export default function AboutDetail() {
         >
           <div className="about-content">
             <span className="section-label">Who Am I?</span>
-            <h3>About Me!</h3>
+            <h3>About Me</h3>
             <p>
-              I'm Ijjaz Ahmad, a passionate Software Developer with expertise in
-              both frontend and backend technologies. I specialize in building
-              dynamic, scalable, and user-friendly web applications.
+              I'm Ijjaz Ahmad, a passionate <strong>Software Developer</strong>{" "}
+              with expertise in both frontend and backend technologies. I
+              specialize in building dynamic, scalable, and user-friendly web
+              applications using <strong>MERN Stack</strong>,{" "}
+              <strong>React.js</strong>, <strong>Next.js</strong>, and{" "}
+              <strong>Node.js</strong>.
             </p>
             <p>
               With a strong foundation in modern frameworks and databases, I
-              create seamless digital experiences. My focus is on writing clean,
-              efficient code to deliver high-performance solutions. Let's
-              collaborate to bring your ideas to life!
+              create seamless digital experiences for clients worldwide. My
+              focus is on writing clean, efficient code to deliver
+              high-performance solutions that drive business growth.
             </p>
-            <button type="button" className="btn">
+            <button type="button" className="btn btn-primary mt-3">
               <a
                 href="https://wa.me/+923267876344"
                 target="_blank"
