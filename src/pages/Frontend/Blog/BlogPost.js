@@ -16,16 +16,17 @@ const BlogPost = () => {
   const { slug } = useParams();
   const post = getPostBySlug(slug);
 
+  // Parse markdown content to HTML (must be before conditional return)
+  const parsedContent = useMemo(() => {
+    if (!post) return "";
+    return marked.parse(post.content);
+  }, [post]);
+
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
 
   const relatedPosts = getRelatedPosts(post.id, post.category);
-
-  // Parse markdown content to HTML
-  const parsedContent = useMemo(() => {
-    return marked.parse(post.content);
-  }, [post.content]);
 
   // Article schema for SEO
   const articleSchema = {
