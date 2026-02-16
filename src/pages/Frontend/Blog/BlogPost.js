@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
+import { marked } from "marked";
 import SEOHead from "../../../components/SEO/SEOHead";
 import { getPostBySlug, getRelatedPosts } from "../../../config/blog";
 import { BlogShare } from "../../../components/SocialShare/SocialShare";
 import Newsletter from "../../../components/Newsletter/Newsletter";
+
+// Configure marked for clean HTML output
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+});
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -14,6 +21,11 @@ const BlogPost = () => {
   }
 
   const relatedPosts = getRelatedPosts(post.id, post.category);
+
+  // Parse markdown content to HTML
+  const parsedContent = useMemo(() => {
+    return marked.parse(post.content);
+  }, [post.content]);
 
   // Article schema for SEO
   const articleSchema = {
@@ -135,7 +147,7 @@ const BlogPost = () => {
               </p>
 
               <div
-                className="post__author"
+                className="post__author__hero"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
@@ -150,20 +162,94 @@ const BlogPost = () => {
                   <span className="author__name">{post.author}</span>
                   <span className="author__title">MERN Stack Developer</span>
                 </div>
+                <div className="hero__divider"></div>
+                <div className="post__stats">
+                  <span>
+                    <i className="fa-regular fa-eye"></i>
+                    {post.content.split(/\s+/).length} words
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="hero__bg__grid"></div>
+        <div className="hero__glow hero__glow--left"></div>
+        <div className="hero__glow hero__glow--right"></div>
       </section>
 
       {/* Post Content */}
       <section className="blog__post__content py-5">
         <div className="container py-5">
           <div className="row">
-            <div className="col-lg-8 mx-auto">
-              {/* Tags */}
-              <div className="post__tags" data-aos="fade-up">
+            {/* Sidebar - Table of Contents */}
+            <div className="col-lg-3 d-none d-lg-block">
+              <div className="post__sidebar" data-aos="fade-right">
+                <div className="sidebar__tags">
+                  <h5>
+                    <i className="fa-solid fa-tags"></i> Tags
+                  </h5>
+                  <div className="tags__list">
+                    {post.tags.map((tag, index) => (
+                      <span key={index} className="tag">
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="sidebar__share">
+                  <h5>
+                    <i className="fa-solid fa-share-nodes"></i> Share
+                  </h5>
+                  <div className="share__buttons">
+                    <a
+                      href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                        post.title
+                      )}&url=${encodeURIComponent(
+                        `https://chijjazahmad.vercel.app/blog/${post.slug}`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="share__btn share__btn--twitter"
+                      aria-label="Share on Twitter"
+                    >
+                      <i className="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a
+                      href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                        `https://chijjazahmad.vercel.app/blog/${post.slug}`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="share__btn share__btn--linkedin"
+                      aria-label="Share on LinkedIn"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      href={`https://wa.me/?text=${encodeURIComponent(
+                        `${post.title} - https://chijjazahmad.vercel.app/blog/${post.slug}`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="share__btn share__btn--whatsapp"
+                      aria-label="Share on WhatsApp"
+                    >
+                      <i className="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+                <Link to="/blog" className="sidebar__back">
+                  <i className="fa-solid fa-arrow-left"></i>
+                  All Articles
+                </Link>
+              </div>
+            </div>
+
+            {/* Main Content */}
+            <div className="col-lg-9">
+              {/* Tags - Mobile Only */}
+              <div className="post__tags d-lg-none" data-aos="fade-up">
                 {post.tags.map((tag, index) => (
                   <span key={index} className="tag">
                     #{tag}
@@ -176,7 +262,7 @@ const BlogPost = () => {
                 className="post__body"
                 data-aos="fade-up"
                 dangerouslySetInnerHTML={{
-                  __html: post.content.replace(/\n/g, "<br/>"),
+                  __html: parsedContent,
                 }}
               />
 
