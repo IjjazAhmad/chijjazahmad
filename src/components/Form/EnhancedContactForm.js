@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  submitQuoteRequest,
+  resetQuoteStatus,
+} from "../../store/slices/quoteRequestSlice";
 import {
   trackFormSubmission,
   trackCTAClick,
 } from "../Analytics/GoogleAnalytics";
 
-// EmailJS Configuration - Replace with your actual IDs
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
-
 const EnhancedContactForm = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const dispatch = useDispatch();
+  const {
+    loading: isSubmitting,
+    success,
+    error,
+  } = useSelector((state) => state.quoteRequest);
 
   const {
     register,
@@ -22,41 +25,30 @@ const EnhancedContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      // Send email using EmailJS
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        {
-          from_name: data.name,
-          from_email: data.email,
-          subject: data.subject,
-          message: data.message,
-          project_type: data.projectType,
-          budget: data.budget,
-        },
-        EMAILJS_PUBLIC_KEY
-      );
-
-      // Track form submission
+  // Reset form on success
+  useEffect(() => {
+    if (success) {
       trackFormSubmission("contact_form");
-
-      setSubmitStatus("success");
       reset();
-
-      // Clear success message after 10 seconds
-      setTimeout(() => setSubmitStatus(null), 10000);
-    } catch (error) {
-      console.error("Email send error:", error);
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
+      const timer = setTimeout(() => dispatch(resetQuoteStatus()), 10000);
+      return () => clearTimeout(timer);
     }
-  };
+  }, [success, reset, dispatch]);
+
+  // Auto-clear error after 10 seconds
+  useEffect(() => {
+    if (error) {
+      const timer = setTimeout(() => dispatch(resetQuoteStatus()), 10000);
+      return () => clearTimeout(timer);
+    }
+  }, [error, dispatch]);
+
+  const onSubmit = useCallback(
+    (data) => {
+      dispatch(submitQuoteRequest(data));
+    },
+    [dispatch],
+  );
 
   const contactWidgets = [
     {
@@ -366,7 +358,7 @@ const EnhancedContactForm = () => {
                     )}
                   </button>
 
-                  {submitStatus === "success" && (
+                  {success && (
                     <div className="form__success mt-3" role="alert">
                       <i className="fa-solid fa-check-circle me-2"></i>
                       <span>
@@ -376,7 +368,7 @@ const EnhancedContactForm = () => {
                     </div>
                   )}
 
-                  {submitStatus === "error" && (
+                  {error && (
                     <div className="form__error mt-3" role="alert">
                       <i className="fa-solid fa-times-circle me-2"></i>
                       <span>

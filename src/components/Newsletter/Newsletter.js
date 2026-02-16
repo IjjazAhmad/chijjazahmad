@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  subscribeNewsletter,
+  resetSubscribeStatus,
+} from "../../store/slices/subscriberSlice";
 import { trackEvent } from "../Analytics/GoogleAnalytics";
 
 const Newsletter = ({ variant = "default" }) => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const dispatch = useDispatch();
+  const {
+    loading: isSubmitting,
+    success,
+    alreadySubscribed,
+    error,
+  } = useSelector((state) => state.subscriber);
 
   const {
     register,
@@ -13,33 +23,30 @@ const Newsletter = ({ variant = "default" }) => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      // For now, we'll simulate the subscription
-      // In production, integrate with Mailchimp, ConvertKit, or your email service
-      console.log("Newsletter subscription:", data.email);
-
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Track subscription
-      trackEvent("subscribe", "newsletter", data.email);
-
-      setSubmitStatus("success");
+  // Reset form on success
+  useEffect(() => {
+    if (success) {
       reset();
-
-      // Clear success message after 5 seconds
-      setTimeout(() => setSubmitStatus(null), 5000);
-    } catch (error) {
-      console.error("Newsletter subscription error:", error);
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
+      const timer = setTimeout(() => dispatch(resetSubscribeStatus()), 5000);
+      return () => clearTimeout(timer);
     }
-  };
+  }, [success, reset, dispatch]);
+
+  // Auto-clear already subscribed / error messages
+  useEffect(() => {
+    if (alreadySubscribed || error) {
+      const timer = setTimeout(() => dispatch(resetSubscribeStatus()), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [alreadySubscribed, error, dispatch]);
+
+  const onSubmit = useCallback(
+    (data) => {
+      trackEvent("subscribe", "newsletter", data.email);
+      dispatch(subscribeNewsletter(data));
+    },
+    [dispatch],
+  );
 
   if (variant === "minimal") {
     return (
@@ -73,13 +80,19 @@ const Newsletter = ({ variant = "default" }) => {
           {errors.email && (
             <span className="newsletter__error">{errors.email.message}</span>
           )}
-          {submitStatus === "success" && (
+          {success && (
             <span className="newsletter__success">
               <i className="fa-solid fa-check-circle"></i> Subscribed
               successfully!
             </span>
           )}
-          {submitStatus === "error" && (
+          {alreadySubscribed && (
+            <span className="newsletter__success">
+              <i className="fa-solid fa-info-circle"></i> You're already
+              subscribed!
+            </span>
+          )}
+          {error && (
             <span className="newsletter__error">
               <i className="fa-solid fa-times-circle"></i> Something went wrong.
               Please try again.
@@ -198,7 +211,7 @@ const Newsletter = ({ variant = "default" }) => {
                     )}
                   </button>
 
-                  {submitStatus === "success" && (
+                  {success && (
                     <div className="form__success" role="alert">
                       <i className="fa-solid fa-check-circle"></i>
                       <span>
@@ -208,7 +221,17 @@ const Newsletter = ({ variant = "default" }) => {
                     </div>
                   )}
 
-                  {submitStatus === "error" && (
+                  {alreadySubscribed && (
+                    <div className="form__success" role="alert">
+                      <i className="fa-solid fa-info-circle"></i>
+                      <span>
+                        You're already subscribed! Thanks for your continued
+                        interest.
+                      </span>
+                    </div>
+                  )}
+
+                  {error && (
                     <div className="form__error-message" role="alert">
                       <i className="fa-solid fa-times-circle"></i>
                       <span>Oops! Something went wrong. Please try again.</span>
