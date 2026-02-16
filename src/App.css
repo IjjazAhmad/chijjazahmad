@@ -12267,6 +12267,15 @@ textarea.form-control-lg {
 .navbar .nav__cta:hover i {
   transform: translateX(3px) rotate(-15deg);
 }
+.navbar .nav__cta--book {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  margin-right: 0.75rem;
+}
+.navbar .nav__cta--book:hover {
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
 
 @media (max-width: 991px) {
   .desktop-nav {
@@ -14638,6 +14647,562 @@ textarea.form-control-lg {
     font-size: 1.5rem;
   }
 }
+.calendly-page {
+  min-height: 100vh;
+  background: #0a0f1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.calendly-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.calendly-widget {
+  display: flex;
+  background: #111827;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: 600px;
+}
+@media (max-width: 768px) {
+  .calendly-widget {
+    flex-direction: column;
+    min-height: auto;
+  }
+}
+
+.calendly-sidebar {
+  width: 320px;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, transparent 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .calendly-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+.calendly-sidebar .host-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 3px solid #6366f1;
+}
+.calendly-sidebar .host-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.calendly-sidebar .host-name {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+.calendly-sidebar .meeting-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+.calendly-sidebar .meeting-info {
+  margin-bottom: 1.5rem;
+}
+.calendly-sidebar .meeting-info .info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+.calendly-sidebar .meeting-info .info-item i {
+  width: 20px;
+  color: #6366f1;
+}
+.calendly-sidebar .meeting-description {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+}
+.calendly-sidebar .selected-datetime {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+.calendly-sidebar .selected-datetime .datetime-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f8fafc;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+.calendly-sidebar .selected-datetime .datetime-item:last-child {
+  margin-bottom: 0;
+}
+.calendly-sidebar .selected-datetime .datetime-item i {
+  color: #6366f1;
+  width: 16px;
+}
+
+.calendly-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .calendly-content {
+    padding: 1.5rem;
+  }
+}
+.calendly-content .content-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+.calendly-content .calendar-slots-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .calendly-content .calendar-slots-wrapper {
+    flex-direction: column;
+  }
+}
+
+.calendar-section {
+  flex: 1;
+  min-width: 280px;
+}
+.calendar-section .calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.calendar-section .calendar-header .month-year {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f8fafc;
+}
+.calendar-section .calendar-header .nav-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  border-radius: 6px;
+  color: #f8fafc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.calendar-section .calendar-header .nav-btn:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: #6366f1;
+}
+.calendar-section .calendar-grid .weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 0.5rem;
+}
+.calendar-section .calendar-grid .weekdays .weekday {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #94a3b8;
+  padding: 0.5rem 0;
+}
+.calendar-section .calendar-grid .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.calendar-section .calendar-grid .days .day-btn {
+  aspect-ratio: 1;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  color: #f8fafc;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-section .calendar-grid .days .day-btn:hover:not(.disabled):not(.empty) {
+  background: rgba(99, 102, 241, 0.2);
+}
+.calendar-section .calendar-grid .days .day-btn.disabled {
+  color: #94a3b8;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.calendar-section .calendar-grid .days .day-btn.empty {
+  cursor: default;
+}
+.calendar-section .calendar-grid .days .day-btn.selected {
+  background: #6366f1;
+  color: white;
+  font-weight: 600;
+}
+
+.slots-section {
+  width: 200px;
+  flex-shrink: 0;
+}
+@media (max-width: 900px) {
+  .slots-section {
+    width: 100%;
+  }
+}
+.slots-section .slots-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.slots-section .slots-loading {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #94a3b8;
+}
+.slots-section .slots-loading .spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.slots-section .slots-loading p {
+  font-size: 0.875rem;
+}
+.slots-section .slots-empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #94a3b8;
+}
+.slots-section .slots-empty i {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  opacity: 0.5;
+}
+.slots-section .slots-empty p {
+  font-size: 0.875rem;
+}
+.slots-section .slots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+.slots-section .slots-list::-webkit-scrollbar {
+  width: 4px;
+}
+.slots-section .slots-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slots-section .slots-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+}
+.slots-section .slot-btn {
+  padding: 0.75rem 1rem;
+  border: 1px solid #6366f1;
+  background: transparent;
+  border-radius: 6px;
+  color: #6366f1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.slots-section .slot-btn:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+.slots-section .slot-btn.selected {
+  background: #6366f1;
+  color: white;
+  justify-content: space-between;
+}
+.slots-section .slot-btn.selected .confirm-btn {
+  padding: 0.25rem 0.75rem;
+  background: white;
+  color: #6366f1;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.slots-section .slot-btn.selected .confirm-btn:hover {
+  background: #f1f5f9;
+}
+
+.details-form .back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.details-form .back-btn:hover {
+  text-decoration: underline;
+}
+.details-form .alert-error {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+  color: #f87171;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+.details-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.details-form .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+.details-form .form-group input,
+.details-form .form-group select,
+.details-form .form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #0a0f1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: #f8fafc;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.details-form .form-group input::-moz-placeholder, .details-form .form-group select::-moz-placeholder, .details-form .form-group textarea::-moz-placeholder {
+  color: #94a3b8;
+}
+.details-form .form-group input::placeholder,
+.details-form .form-group select::placeholder,
+.details-form .form-group textarea::placeholder {
+  color: #94a3b8;
+}
+.details-form .form-group input:focus,
+.details-form .form-group select:focus,
+.details-form .form-group textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+.details-form .form-group input.error,
+.details-form .form-group select.error,
+.details-form .form-group textarea.error {
+  border-color: #ef4444;
+}
+.details-form .form-group select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236366f1' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+.details-form .form-group select option {
+  background: #111827;
+}
+.details-form .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.details-form .form-group .error-msg {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #f87171;
+}
+.details-form .submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #6366f1;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.details-form .submit-btn:hover:not(:disabled) {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+.details-form .submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.details-form .submit-btn .btn-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.details-form .form-note {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.calendly-confirmed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #111827;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.calendly-confirmed .confirmed-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(34, 197, 94, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.calendly-confirmed .confirmed-icon i {
+  font-size: 3rem;
+  color: #22c55e;
+}
+.calendly-confirmed h2, .calendly-confirmed .h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+.calendly-confirmed .confirmed-subtitle {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+.calendly-confirmed .confirmed-details {
+  background: rgba(99, 102, 241, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+.calendly-confirmed .confirmed-details .detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f8fafc;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+.calendly-confirmed .confirmed-details .detail-item:last-child {
+  margin-bottom: 0;
+}
+.calendly-confirmed .confirmed-details .detail-item i {
+  color: #6366f1;
+  width: 20px;
+}
+.calendly-confirmed .btn-schedule-another {
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 1px solid #6366f1;
+  border-radius: 50px;
+  color: #6366f1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.calendly-confirmed .btn-schedule-another:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.calendly-footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+.calendly-footer .powered-by {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.calendly-footer .powered-by strong {
+  color: #6366f1;
+}
+.calendly-footer .powered-by:hover {
+  color: #f8fafc;
+}
+
 .services_page {
   background: #0f172a;
   position: relative;
