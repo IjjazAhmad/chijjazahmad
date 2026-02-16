@@ -10,6 +10,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Hirebtn from "../../components/Hirebtn/Hirebtn";
 import { Blog, BlogPost } from "./Blog";
+import BookAppointment from "./BookAppointment";
 import GoogleAnalytics from "../../components/Analytics/GoogleAnalytics";
 
 export default function index() {
@@ -24,6 +25,7 @@ export default function index() {
           <Route path="/service" element={<Services />} />
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
