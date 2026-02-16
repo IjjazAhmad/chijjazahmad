@@ -103,6 +103,17 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item" role="none">
                   <Link
+                    to="/book-appointment"
+                    className="nav__cta nav__cta--book"
+                    role="menuitem"
+                    aria-label="Book a free consultation meeting"
+                  >
+                    <i className="fa-solid fa-calendar-check"></i>
+                    <span>BOOK</span>
+                  </Link>
+                </li>
+                <li className="nav-item" role="none">
+                  <Link
                     to="/contact"
                     className="nav__cta"
                     role="menuitem"
@@ -136,9 +147,12 @@ export default function Navbar() {
           <i className="fa-solid fa-code"></i>
           <span>Services</span>
         </Link>
-        <Link to="/project" className={isActiveBottom("/project")}>
-          <i className="fa-solid fa-folder-open"></i>
-          <span>Projects</span>
+        <Link
+          to="/book-appointment"
+          className={isActiveBottom("/book-appointment")}
+        >
+          <i className="fa-solid fa-calendar-check"></i>
+          <span>Book</span>
         </Link>
         <Link to="/contact" className={isActiveBottom("/contact")}>
           <i className="fa-solid fa-paper-plane"></i>
