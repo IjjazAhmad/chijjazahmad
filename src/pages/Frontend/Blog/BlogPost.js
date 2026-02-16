@@ -205,9 +205,9 @@ const BlogPost = () => {
                   <div className="share__buttons">
                     <a
                       href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                        post.title
+                        post.title,
                       )}&url=${encodeURIComponent(
-                        `https://chijjazahmad.vercel.app/blog/${post.slug}`
+                        `https://chijjazahmad.vercel.app/blog/${post.slug}`,
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -218,7 +218,7 @@ const BlogPost = () => {
                     </a>
                     <a
                       href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-                        `https://chijjazahmad.vercel.app/blog/${post.slug}`
+                        `https://chijjazahmad.vercel.app/blog/${post.slug}`,
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -229,7 +229,7 @@ const BlogPost = () => {
                     </a>
                     <a
                       href={`https://wa.me/?text=${encodeURIComponent(
-                        `${post.title} - https://chijjazahmad.vercel.app/blog/${post.slug}`
+                        `${post.title} - https://chijjazahmad.vercel.app/blog/${post.slug}`,
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
