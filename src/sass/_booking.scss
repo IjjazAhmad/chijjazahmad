@@ -632,3 +632,462 @@ $calendly-success: #22c55e;
         }
     }
 }
+
+// =====================
+// Responsive Styles
+// =====================
+
+// Extra small devices (phones, less than 576px)
+@media (max-width: 575.98px) {
+    .calendly-page {
+        padding: 1rem 0.5rem;
+        padding-top: 80px; // Account for fixed navbar
+        justify-content: flex-start;
+    }
+
+    .calendly-widget {
+        border-radius: 12px;
+        min-height: auto;
+    }
+
+    .calendly-sidebar {
+        padding: 1.25rem;
+
+        .host-avatar {
+            width: 60px;
+            height: 60px;
+        }
+
+        .meeting-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .meeting-info {
+            margin-bottom: 1rem;
+
+            .info-item {
+                font-size: 0.8rem;
+                margin-bottom: 0.5rem;
+
+                i {
+                    width: 16px;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
+        .meeting-description {
+            display: none; // Hide on very small screens
+        }
+
+        .selected-datetime {
+            padding: 0.75rem;
+            margin-top: 1rem;
+
+            .datetime-item {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .calendly-content {
+        padding: 1rem;
+
+        .content-title {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .calendar-slots-wrapper {
+            gap: 1rem;
+        }
+    }
+
+    .calendar-section {
+        min-width: unset;
+
+        .calendar-header {
+            .month-year {
+                font-size: 0.9rem;
+            }
+
+            .nav-btn {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        .calendar-grid {
+            .weekdays .weekday {
+                font-size: 0.6rem;
+                padding: 0.25rem 0;
+            }
+
+            .days {
+                gap: 2px;
+
+                .day-btn {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+
+    .slots-section {
+        .slots-title {
+            font-size: 0.85rem;
+        }
+
+        .slots-list {
+            max-height: 200px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .slot-btn {
+            padding: 0.6rem 0.5rem;
+            font-size: 0.8rem;
+
+            &.selected {
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .confirm-btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .details-form {
+        .form-group {
+            label {
+                font-size: 0.8rem;
+            }
+
+            input,
+            select,
+            textarea {
+                padding: 0.65rem 0.75rem;
+                font-size: 0.85rem;
+            }
+
+            textarea {
+                min-height: 60px;
+            }
+        }
+
+        .submit-btn {
+            padding: 0.85rem;
+            font-size: 0.9rem;
+        }
+
+        .form-note {
+            font-size: 0.7rem;
+        }
+    }
+
+    .calendly-confirmed {
+        padding: 2rem 1rem;
+
+        .confirmed-icon {
+            width: 60px;
+            height: 60px;
+
+            i {
+                font-size: 2rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.35rem;
+        }
+
+        .confirmed-subtitle {
+            font-size: 0.85rem;
+        }
+
+        .confirmed-details {
+            padding: 1rem;
+
+            .detail-item {
+                font-size: 0.8rem;
+            }
+        }
+
+        .btn-schedule-another {
+            padding: 0.65rem 1.5rem;
+            font-size: 0.85rem;
+        }
+    }
+
+    .calendly-footer {
+        padding: 1rem;
+
+        .powered-by {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .calendly-page {
+        padding: 1.5rem 1rem;
+        padding-top: 90px;
+    }
+
+    .calendly-sidebar {
+        padding: 1.5rem;
+
+        .host-avatar {
+            width: 70px;
+            height: 70px;
+        }
+
+        .meeting-title {
+            font-size: 1.35rem;
+        }
+    }
+
+    .calendly-content {
+        padding: 1.5rem;
+    }
+
+    .slots-section {
+        .slots-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            max-height: none;
+        }
+
+        .slot-btn {
+            padding: 0.65rem 0.75rem;
+            font-size: 0.85rem;
+
+            &.selected {
+                grid-column: span 3;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .calendly-page {
+        padding: 2rem 1.5rem;
+        padding-top: 100px;
+    }
+
+    .calendly-widget {
+        flex-direction: row;
+    }
+
+    .calendly-sidebar {
+        width: 280px;
+        padding: 1.5rem;
+        border-right: 1px solid $calendly-border;
+        border-bottom: none;
+
+        .meeting-description {
+            font-size: 0.8rem;
+        }
+    }
+
+    .calendly-content {
+        padding: 1.5rem;
+    }
+
+    .slots-section {
+        width: 180px;
+
+        .slots-list {
+            max-height: 300px;
+        }
+
+        .slot-btn {
+            font-size: 0.85rem;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .calendly-page {
+        padding-top: 120px;
+    }
+
+    .calendly-sidebar {
+        width: 320px;
+    }
+
+    .slots-section {
+        width: 200px;
+    }
+}
+
+// Handle landscape orientation on mobile
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .calendly-page {
+        padding-top: 70px;
+    }
+
+    .calendly-widget {
+        flex-direction: row;
+        min-height: 400px;
+    }
+
+    .calendly-sidebar {
+        width: 250px;
+        border-right: 1px solid $calendly-border;
+        border-bottom: none;
+        padding: 1rem;
+
+        .host-avatar {
+            width: 50px;
+            height: 50px;
+        }
+
+        .meeting-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .meeting-info {
+            margin-bottom: 0.75rem;
+
+            .info-item {
+                font-size: 0.75rem;
+                margin-bottom: 0.35rem;
+            }
+        }
+
+        .meeting-description {
+            display: none;
+        }
+
+        .selected-datetime {
+            padding: 0.5rem;
+            margin-top: 0.75rem;
+
+            .datetime-item {
+                font-size: 0.75rem;
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+
+    .calendly-content {
+        padding: 1rem;
+
+        .content-title {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    .calendar-section .calendar-grid .days .day-btn {
+        font-size: 0.7rem;
+    }
+
+    .slots-section {
+        .slots-list {
+            max-height: 180px;
+        }
+
+        .slot-btn {
+            padding: 0.5rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    .details-form {
+        .form-group {
+            input,
+            select,
+            textarea {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        .submit-btn {
+            padding: 0.7rem;
+            font-size: 0.85rem;
+        }
+    }
+
+    .calendly-confirmed {
+        padding: 1.5rem 1rem;
+
+        .confirmed-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+
+            i {
+                font-size: 1.75rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .confirmed-details {
+            padding: 0.75rem;
+        }
+    }
+}
+
+// Touch device optimizations
+@media (hover: none) and (pointer: coarse) {
+    .calendar-section .calendar-grid .days .day-btn {
+        min-height: 36px;
+        min-width: 36px;
+    }
+
+    .slot-btn {
+        min-height: 44px;
+    }
+
+    .details-form {
+        .form-group {
+            input,
+            select,
+            textarea {
+                min-height: 44px;
+            }
+        }
+
+        .submit-btn {
+            min-height: 48px;
+        }
+    }
+
+    .nav-btn {
+        min-width: 36px;
+        min-height: 36px;
+    }
+}
+
+// Safe area insets for notched devices
+@supports (padding: max(0px)) {
+    .calendly-page {
+        padding-left: max(1rem, env(safe-area-inset-left));
+        padding-right: max(1rem, env(safe-area-inset-right));
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+}
+
+// Reduce motion for accessibility
+@media (prefers-reduced-motion: reduce) {
+    .calendly-page * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
