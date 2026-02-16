@@ -1,7 +1,5 @@
-// Dashboard API base URL (from environment variable, with fallback)
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL ||
-  "https://my-dashboard-virid.vercel.app/api";
+// Dashboard API base URL (from environment variable)
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 export const API_ENDPOINTS = {
   QUOTE_REQUESTS: `${API_BASE_URL}/quote-requests`,

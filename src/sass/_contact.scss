@@ -82,7 +82,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
       linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
       linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
@@ -130,7 +130,7 @@
     pointer-events: none;
   }
 
-  > * {
+  >* {
     position: relative;
     z-index: 1;
   }
@@ -159,7 +159,7 @@
 
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 
+    box-shadow:
       0 20px 60px rgba(99, 102, 241, 0.2),
       0 0 40px rgba(236, 72, 153, 0.1);
     border-color: rgba(99, 102, 241, 0.3);
@@ -330,7 +330,7 @@
     pointer-events: none;
   }
 
-  > * {
+  >* {
     position: relative;
     z-index: 1;
   }
@@ -411,7 +411,7 @@
         outline: none;
         border-color: $primary;
         background: rgba(99, 102, 241, 0.05);
-        box-shadow: 
+        box-shadow:
           0 0 0 4px rgba(99, 102, 241, 0.1),
           0 0 20px rgba(99, 102, 241, 0.2);
       }

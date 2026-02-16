@@ -520,12 +520,14 @@ legend {
   padding: 0;
   margin-bottom: 0.5rem;
   font-size: calc(1.275rem + 0.3vw);
-  line-height: inherit;
 }
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
   }
+}
+legend {
+  line-height: inherit;
 }
 legend + * {
   clear: left;
@@ -599,68 +601,80 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
-  line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 5rem;
   }
 }
+.display-1 {
+  font-weight: 300;
+  line-height: 1.2;
+}
 
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
-  font-weight: 300;
-  line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-2 {
     font-size: 4.5rem;
   }
 }
+.display-2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
-  line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-3 {
     font-size: 4rem;
   }
 }
+.display-3 {
+  font-weight: 300;
+  line-height: 1.2;
+}
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
-  line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-4 {
     font-size: 3.5rem;
   }
 }
+.display-4 {
+  font-weight: 300;
+  line-height: 1.2;
+}
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
-  line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-5 {
     font-size: 3rem;
   }
 }
+.display-5 {
+  font-weight: 300;
+  line-height: 1.2;
+}
 
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
-  font-weight: 300;
-  line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-6 {
     font-size: 2.5rem;
   }
+}
+.display-6 {
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 .list-unstyled {
@@ -5468,12 +5482,14 @@ textarea.form-control-lg {
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
-  transform: translate(0, -50px);
 }
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
     transition: none;
   }
+}
+.modal.fade .modal-dialog {
+  transform: translate(0, -50px);
 }
 .modal.show .modal-dialog {
   transform: none;
@@ -13006,8 +13022,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 2.5rem;
   background: linear-gradient(145deg, rgba(15, 15, 35, 0.95), rgba(20, 20, 45, 0.9));
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(99, 102, 241, 0.15);
   border-radius: 24px;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -13459,8 +13474,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 2px solid transparent;
   background-clip: padding-box;
   -o-border-image: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(236, 72, 153, 0.3)) 1;
@@ -13884,8 +13898,7 @@ textarea.form-control-lg {
 }
 .about-section .about-skills .skills-container {
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 2px solid transparent;
   background-clip: padding-box;
   -o-border-image: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(236, 72, 153, 0.3)) 1;
@@ -14040,8 +14053,7 @@ textarea.form-control-lg {
   width: 48px;
   height: 48px;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50% !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -14241,8 +14253,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 2.5rem;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 0 100%);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -14408,8 +14419,7 @@ textarea.form-control-lg {
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   font-family: "Rajdhani", sans-serif;
@@ -14426,8 +14436,7 @@ textarea.form-control-lg {
 .contact__form {
   padding: 3rem;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -14498,7 +14507,8 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 .contact__form .form__group input,
-.contact__form .form__group textarea {
+.contact__form .form__group textarea,
+.contact__form .form__group select {
   width: 100%;
   border: 1px solid rgba(99, 102, 241, 0.2);
   background: rgba(255, 255, 255, 0.03);
@@ -14510,19 +14520,36 @@ textarea.form-control-lg {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Rajdhani", sans-serif;
 }
-.contact__form .form__group input::-moz-placeholder, .contact__form .form__group textarea::-moz-placeholder {
+.contact__form .form__group input::-moz-placeholder, .contact__form .form__group textarea::-moz-placeholder, .contact__form .form__group select::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 .contact__form .form__group input::placeholder,
-.contact__form .form__group textarea::placeholder {
+.contact__form .form__group textarea::placeholder,
+.contact__form .form__group select::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 .contact__form .form__group input:focus,
-.contact__form .form__group textarea:focus {
+.contact__form .form__group textarea:focus,
+.contact__form .form__group select:focus {
   outline: none;
   border-color: #6366f1;
   background: rgba(99, 102, 241, 0.05);
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1), 0 0 20px rgba(99, 102, 241, 0.2);
+}
+.contact__form .form__group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.25rem center;
+  padding-right: 3rem;
+  cursor: pointer;
+}
+.contact__form .form__group select option {
+  background: #1e1b4b;
+  color: #ffffff;
+  padding: 0.5rem;
 }
 .contact__form .form__group textarea {
   resize: vertical;
@@ -14723,8 +14750,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 2.5rem;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -14905,8 +14931,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 4rem 3rem;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
   text-align: center;
@@ -17934,8 +17959,7 @@ main {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 20px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transition: all 0.4s ease;
 }
 .testimonials-creative .stats-row .stat-card:hover {
